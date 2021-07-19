@@ -1,0 +1,1 @@
+self += args.my_flatten

@@ -1,0 +1,1 @@
+hash.values.max
