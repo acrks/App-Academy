@@ -20,7 +20,8 @@ class Game
     end
 
     def valid_play?(string)
-        ('a'..'z').to_a
+        alpha = ('a'..'z').to_a?(Array)
+        return alpha.include?(string)
         # Checks that string is a letter of the alphabet and that there are words we can spell after 
         # adding it to the fragment
     end
