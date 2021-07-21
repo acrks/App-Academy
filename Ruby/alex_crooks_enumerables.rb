@@ -118,12 +118,17 @@ class Array
         self
     end
 
-    def bubble_sort!(prc)
-        (0...self.length - 1).each do |i|
-            if prc.call(self[i])
-            self[i], self
+    def bubble_sort!(&prc)
+        prc ||= Proc.new {|el, el2| el > el2 }
+        sorted = true
+        while sorted
+        sorted = false
+            (0...self.length - 1).each do |i|
+                self[i], self[i+1] = self[i+1], self[i] if prc.call(self[i], self[i+1])
+                    sorted = true
+            end
         end
-        if prc.call()
+        self
     end
 end
 
@@ -171,5 +176,4 @@ end
 p [].factors(10)
 
 a = [1,2,3,4,5].shuffle
-bubbler = Proc.new {|num| num <= }
-a.bubble_sort!(&prc)
+p a.bubble_sort!
