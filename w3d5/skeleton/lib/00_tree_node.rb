@@ -10,7 +10,7 @@ class PolyTreeNode
     def parent=(new_parent)
         @parent = new_parent
         @children.each do |i|
-            new_parent.children << i
+            new_parent.children += i
         end
     end
 
