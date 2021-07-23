@@ -49,6 +49,18 @@ class PolyTreeNode
     #    b) if result != nil, return node
     # 3) return nil
 
+    def bfs(target)
+        arr = [self]
+        until arr.empty?
+            node = arr.shift
+            if node.value == target
+                return node
+            else
+                node.children.each { |child| arr << child }
+            end
+        end
+        return nil
+    end
     # Breadth First Search
     # 1) Create queue with root node
     # 2) Until queue empty
