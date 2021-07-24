@@ -34,7 +34,7 @@ class PolyTreeNode
             
         @children.each do |child| 
             child_search = child.dfs(target)
-            return child_search if child_search != nil
+            return child_search if child_search
         end 
         
         return nil
