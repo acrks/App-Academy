@@ -90,8 +90,6 @@ class KnightPathFinder
     end
     # Use #trace_path_back to finish up #find_path.
 
-     
-
 end
 
 kpf = KnightPathFinder.new([0, 0])
