@@ -2,9 +2,12 @@ require_relative "00_tree_node"
 
 class KnightPathFinder
 
+    attr_reader :root_node
+
     def initialize(pos)
         # self.root_node = PolyTreeNode.new(pos)
         @considered_positions = [pos]
+        @root_node = PolyTreeNode.new(pos)
     end
 
     def self.valid_moves(pos)
@@ -29,19 +32,6 @@ class KnightPathFinder
         return true
     end
 
-    # | | | | | | | | |
-    # | | | | | | | | |
-    # | | | | | | | | |
-    # | | | | | | | | |
-    # | | | | | | | | |
-    # | | | | | | | | |
-    # | | | | | | | | |
-    # | | | | | | | | |
-
-    def build_move_tree
-
-    end
-
     # Write an instance method #new_move_positions(pos); 
     # this should call the ::valid_moves class method, but filter out any positions that are 
     # already in @considered_positions. It should then add the remaining new positions to 
@@ -49,11 +39,30 @@ class KnightPathFinder
 
     def new_move_positions(pos)
         poss_moves = KnightPathFinder.valid_moves(pos)
-        poss_moves.each do |i|
-            @considered_positions << i if !@considered_positions.include?(i)
+        poss_moves.select! { |move| !@considered_positions.include?(move) }
+        poss_moves.each do |move|
+            @considered_positions << move
         end
+        poss_moves
     end
 
+    # To ensure that your tree represents only the shortest path to a given position, 
+    # build your tree in a breadth-first manner. Take inspiration from your BFS algorithm: 
+    # use a queue to process nodes in FIFO order. Start with a root node representing 
+    # the start_pos and explore moves from one position at a time.
+
+    def build_move_tree
+        # arr = [self]
+        # until arr.empty?
+        #     node = arr.shift
+        #     if node.value == target
+        #         return node
+        #     else
+        #         node.children.each { |child| arr << child }
+        #     end
+        # end
+        # return nil
+    end
     # TODO: write method build_move_tree
 end
 
