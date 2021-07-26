@@ -5,7 +5,6 @@ class KnightPathFinder
     attr_reader :root_node
 
     def initialize(pos)
-        # self.root_node = PolyTreeNode.new(pos)
         @considered_positions = [pos]
         @root_node = PolyTreeNode.new(pos)
     end
@@ -51,7 +50,29 @@ class KnightPathFinder
     # use a queue to process nodes in FIFO order. Start with a root node representing 
     # the start_pos and explore moves from one position at a time.
 
+
+    # Create a node tree
+    # Parent, the previous move
+    # Child, all the possible moves from there
     def build_move_tree
+        parent = @root_node
+        queue = new_move_positions(@root_node.value)
+        until queue.empty?
+            # Creating new node off the first pos in the queue
+            node = PolyTreeNode.new(queue.shift)
+            # Adding this node as a child to the parent node
+            parent.add_child(node)
+            # Calculating the new move positions from node/set them as children
+            children = new_move_positions(node.value)
+            # Queuing up each child
+            children.each do |child|
+                # Adding each child to their parent node
+                queue << child
+                node.add_child(child)
+            end
+            
+            parent = node
+        end
         # arr = [self]
         # until arr.empty?
         #     node = arr.shift
@@ -63,7 +84,6 @@ class KnightPathFinder
         # end
         # return nil
     end
-    # TODO: write method build_move_tree
 end
 
 kpf = KnightPathFinder.new([0, 0])
