@@ -2,11 +2,12 @@ require_relative "00_tree_node"
 
 class KnightPathFinder
 
-    attr_reader :root_node
+    attr_reader :root_node, :considered_positions
 
     def initialize(pos)
         @considered_positions = [pos]
         @root_node = PolyTreeNode.new(pos)
+        self.build_move_tree
     end
 
     def self.valid_moves(pos)
@@ -55,35 +56,44 @@ class KnightPathFinder
     # Parent, the previous move
     # Child, all the possible moves from there
     def build_move_tree
-        parent = @root_node
-        queue = new_move_positions(@root_node.value)
+        queue = [root_node]
         until queue.empty?
-            # Creating new node off the first pos in the queue
-            node = PolyTreeNode.new(queue.shift)
-            # Adding this node as a child to the parent node
-            parent.add_child(node)
-            # Calculating the new move positions from node/set them as children
+            node = queue.shift
             children = new_move_positions(node.value)
-            # Queuing up each child
             children.each do |child|
-                # Adding each child to their parent node
-                queue << child
-                node.add_child(child)
+                child_node = PolyTreeNode.new(child, node)
+                node.add_child(child_node)
+                queue << child_node
             end
-            
-            parent = node
         end
-        # arr = [self]
-        # until arr.empty?
-        #     node = arr.shift
-        #     if node.value == target
-        #         return node
-        #     else
-        #         node.children.each { |child| arr << child }
-        #     end
-        # end
-        # return nil
     end
+
+    # Create an instance method #find_path(end_pos) to search for end_pos in the move tree. 
+    # You can use either dfs or bfs search methods from the PolyTreeNode exercises; it doesn't matter. 
+    # This should return the tree node instance containing end_pos.
+    def find_path(end_pos)
+        trace_path_back(@root_node.dfs(end_pos))
+    end
+    # This gives us a node, but not a path. 
+    # Lastly, add a method #trace_path_back to KnightPathFinder.
+    # This should trace back from the node to the root using PolyTreeNode#parent. 
+    # As it goes up-and-up toward the root, it should add each value to an array. 
+    # #trace_path_back should return the values in order from the start position to the end position.
+    def trace_path_back(node)
+        path_back = [node.value]
+        node_parent = node.parent
+        until node_parent == nil
+            path_back << node_parent.value
+            node_parent = node_parent.parent
+        end
+        path_back.reverse
+    end
+    # Use #trace_path_back to finish up #find_path.
+
+     
+
 end
 
 kpf = KnightPathFinder.new([0, 0])
+p kpf.find_path([7, 6]) # => [[0, 0], [1, 2], [2, 4], [3, 6], [5, 5], [7, 6]]
+p kpf.find_path([6, 2]) # => [[0, 0], [1, 2], [2, 0], [4, 1], [6, 2]]
