@@ -66,5 +66,7 @@ class PolyTreeNode
     #     b) check if node matches target
     #     c) if not, add children to queue
     # 3) if queue empty, return nil
-
+    # def self.root_node(startingPos)
+        
+    # end
 end
