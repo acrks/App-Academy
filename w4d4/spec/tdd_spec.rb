@@ -38,5 +38,4 @@ describe "#stock_picker" do
     it "will output the most profitable pair of days because you minimize losses" do
         expect([6,5,3,1].stock_picker).to eq([6,5])
     end
-
 end

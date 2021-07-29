@@ -26,18 +26,6 @@ class Array
         end
         new_arr
     end
-    
-    # def my_transpose
-    #     new_arr = []
-    #     (0..self.length - 1).each do |row|
-    #         temp = []
-    #         (0..self.length - 1).each do |ele| 
-    #             temp << self[ele][row]
-    #         end
-    #         new_arr << temp
-    #     end
-    #     new_arr
-    # end
 
     def stock_picker 
         new_arr = []
@@ -49,7 +37,6 @@ class Array
 
         new_arr
     end
-
     
     
 end
