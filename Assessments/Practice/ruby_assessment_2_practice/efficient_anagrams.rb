@@ -12,6 +12,15 @@
 #
 # This component of the assessment is estimated to take 10 minutes.
 
+def anagrams(str1, str2)
+    return false if str1.length != str2.length
+    (0...str1.length).each do |i|
+        return false if !str2.include?(str1[i])
+    end
+    return true
+end
+
+def 
 
 # Test Cases
 p anagrams("restful", "fluster")    # => true
