@@ -21,3 +21,42 @@ end
 
 list = [ 0, 3, 5, 4, -5, 10, 1, 90 ]
 # p my_min2(list)
+
+# Largest Contiguous Sub-sum
+# You have an array of integers and you want to find the largest contiguous (together in sequence) sub-sum. 
+# Find the sums of all contiguous sub-arrays and return the max.
+
+# Example:
+
+def largest_contiguous_subsum(arr)
+  temp_val = []
+  (0...arr.length).each do |start|
+    (start...arr.length).each do |last|
+      temp_val << arr[start..last]
+    end
+  end
+  variable = temp_val.first.sum
+  temp_val.each do |a|
+    variable = a.sum if a.sum > variable
+  end
+  return variable
+end
+
+list = [5, 3, -7]
+# p largest_contiguous_subsum(list) # => 8
+
+# possible sub-sums
+# [5]           # => 5
+# [5, 3]        # => 8 --> we want this one
+# [5, 3, -7]    # => 1
+# [3]           # => 3
+# [3, -7]       # => -4
+# [-7]          # => -7
+
+# Example 2:
+list = [2, 3, -6, 7, -6, 7]
+# p largest_contiguous_subsum(list) # => 8 (from [7, -6, 7])
+
+# Example 3:
+list = [-5, -1, -3]
+# p largest_contiguous_subsum(list) # => -1 (from [-1])
