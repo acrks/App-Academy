@@ -27,16 +27,16 @@ class Array
         new_arr
     end
 
-    def stock_picker 
-        new_arr = []
-        buy = self.index(self.min)
-        new_arr << buy
+    # def stock_picker 
+    #     new_arr = []
+    #     buy = self.index(self.min)
+    #     new_arr << buy
 
-        sell = self.index(self[buy..-1].max)
-        new_arr << sell
+    #     sell = self.index(self[buy..-1].max)
+    #     new_arr << sell
 
-        new_arr
-    end
+    #     new_arr
+    # end
     
     
 end
