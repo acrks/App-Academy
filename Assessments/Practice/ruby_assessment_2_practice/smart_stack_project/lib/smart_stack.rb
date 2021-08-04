@@ -4,42 +4,38 @@ class Stack
     end
 
     def size
-        @underlying_array.size
-    end
-
-    def empty?
-        @underlying_array.empty?
-    end
-
-    def top
-        @underlying_array[-1]
-    end
-
-    def peek(n)
-        new_arr = []
-        (0...n).each do |i|
-            new_arr << @underlying_array[-1-i]
-        end
-        new_arr
-    end
-
-    def push(item)
-        @underlying_array << item
         @underlying_array.length
     end
 
+    def empty?
+        size == 0
+    end
+
+    def top
+        return @underlying_array[-1]
+    end
+
+    def peek(n)
+        @underlying_array[-n..-1]
+    end
+
+    def push(item)
+        @underlying_array.push(item).count
+    end
+
     def pop
-        return nil if @underlying_array.empty?
-        return @underlying_array.pop
+        @underlying_array.pop
     end
 end
 
-
-class SmartStack < Stack    
-    attr_reader :max_size
-    def initialize(num)
-        @max_size = num
+class SmartStack < Stack
+    def initialize(number)
+        @max_size = number
         @underlying_array = []
+    end
+
+    def max_size
+        @max_size
     end
 
     def full?
@@ -48,8 +44,8 @@ class SmartStack < Stack
 
     def push(*nums)
         raise 'stack is full' if nums.length + @underlying_array.length > max_size
-        nums.each do |ele|
-            @underlying_array.push(ele)
+        nums.each do |i|
+            @underlying_array << i
         end
         @underlying_array.length
     end
@@ -57,23 +53,22 @@ class SmartStack < Stack
     def pop(n = -1)
         if n == -1
             return [@underlying_array.pop]
-        elsif n > @underlying_array.length
-            new_arr = []
+        end
+        new_arr = []
+        if n > @underlying_array.length
             n.times do |i|
                 if @underlying_array.empty?
-                    new_arr << nil 
+                    new_arr << nil
                 else
-                    new_arr << @underlying_array.pop 
+                    new_arr << @underlying_array.pop
                 end
             end
-            return new_arr
+            new_arr
         else
-            new_arr = []
             n.times do |i|
                 new_arr << @underlying_array.pop
             end
-            new_arr
         end
-
-    end
+        new_arr
+    end  
 end

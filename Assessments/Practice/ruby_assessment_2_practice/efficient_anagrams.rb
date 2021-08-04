@@ -14,13 +14,17 @@
 
 def anagrams(str1, str2)
     return false if str1.length != str2.length
+    hash= Hash.new(0)
     (0...str1.length).each do |i|
-        return false if !str2.include?(str1[i])
+        hash[str1[i]] += 1
     end
-    return true
+    (0...str2.length).each do |i|
+        hash[str2[i]] -= 1
+    end
+    hash.values.all? {|ele| ele == 0}
 end
 
-def 
+
 
 # Test Cases
 p anagrams("restful", "fluster")    # => true
