@@ -122,7 +122,7 @@ def andrews_films_and_leads
   JOIN actors ON
     actors.id = castings.actor_id
   WHERE
-    movies.id = (
+    movies.id IN (
       SELECT
         movies.id
       FROM
