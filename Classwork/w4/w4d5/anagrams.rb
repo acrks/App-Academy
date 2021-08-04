@@ -35,4 +35,4 @@ end
 
 p fourth_anagram?("listen", "silent")
 p fourth_anagram?("stressed", "desserts")
-p fourth_anagram?("cat", "tac")
+p fourth_anagram?("cat", "tax")

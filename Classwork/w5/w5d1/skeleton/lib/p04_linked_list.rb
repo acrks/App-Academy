@@ -73,13 +73,11 @@ class LinkedList
   end
 
   def each
-    return_arr = []
     node = @head
-    until node.next.nil?
-      return_arr << node.val
+    until node.next == nil
+      yield node
       node = node.next
     end
-    return_arr
   end
 
   # uncomment when you have `each` working and `Enumerable` included

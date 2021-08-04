@@ -12,11 +12,12 @@ class PolyTreeNode
     end
 
     def parent=(new_parent)
-        parent.children.delete(self) if parent != nil
+        
+        @parent.children.delete(self) if @parent != nil
         if new_parent != nil && !new_parent.children.include?(self)
             new_parent.children << self 
         end
-        parent = new_parent
+        @parent = new_parent
     end
 
     def add_child(child)
@@ -36,11 +37,14 @@ class PolyTreeNode
     # 3) return nil
 
     def dfs(target)
-        return self if value == target
-        children.each do |child|
-            return child if child.dfs(target)
-        end
-        return nil 
+        return self if @value == target 
+            
+        @children.each do |child| 
+            child_search = child.dfs(target)
+            return child_search if child_search
+        end 
+        
+        return nil
     end
 
 
@@ -63,7 +67,7 @@ class PolyTreeNode
             if node.value == target
                 return node
             else
-                node.children.each {|child| arr << child}
+                node.children.each { |child| arr << child }
             end
         end
         return nil

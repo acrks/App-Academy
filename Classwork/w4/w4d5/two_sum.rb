@@ -44,8 +44,8 @@ end
 # p ok_two_sum?(arr, 6) # => should be true
 # p ok_two_sum?(arr, 10) # => should be false
 
-
-# Time Complexity
+# white whale
+# Time Complexity -> O(n)
 def two_sum?(arr, sum)
     hash = Hash.new
     arr.each do |ele|
@@ -60,5 +60,5 @@ def two_sum?(arr, sum)
 end
 
 arr = [0, 1, 5, 7]
-p two_sum?(arr, 6) # => should be true
-p two_sum?(arr, 10) # => should be false
+two_sum?(arr, 6) # => should be true
+two_sum?(arr, 10) # => should be false
