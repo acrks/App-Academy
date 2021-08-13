@@ -7,12 +7,12 @@
         <select id = "color" name='cat[color]'>
         <option value = "Select Color of Cat" disabled = "true" selected ="true">Select Color of the Cat</option>
             <% Cat::COLORS.each_with_index do |color| %> 
-            <option value = '#{color}'> #{color} </option>
+            <option value='<%=color%>'> <%=color%> </option>
             <%end%>
         </select>
     </label>
     <br><br>
-    <label>Date_of_Birth: 
+    <label>Date of Birth: 
         <input type='date' name='cat[birth_date]' value='<%@cat.birth_date%>'>
     </label>
     <br><br>
