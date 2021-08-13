@@ -1,0 +1,13 @@
+<ul>
+    <li><%= cat.name %></li>
+    <li><%= cat.sex %></li>
+    <li><%= cat.birth_date %></li>
+    <li><%= cat.color %></li>
+    <li><%= cat.description %></li>
+
+    <% if page == :show %>
+        <li><a href="<%= cats_url%>">Cat index</a></li>
+    <%else%>
+        <li><a href="<%= cat_url(cat)%>">Cat's Show page</a></li>
+    <%end%>
+</ul>
