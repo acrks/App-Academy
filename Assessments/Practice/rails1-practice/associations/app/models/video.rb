@@ -11,17 +11,17 @@
 #
 
 class Video < ApplicationRecord
-    has_many :comments,
-        foreign_key: :video_id,
-        class_name: :Comment
-    
     belongs_to :uploader,
         foreign_key: :uploader_id,
         class_name: :User
 
+    has_many :comments,
+        foreign_key: :video_id,
+        class_name: :Comment
+
     has_many :likes,
         foreign_key: :video_id,
-        source: :Like
+        class_name: :Like
 
     has_many :likers,
         through: :likes,

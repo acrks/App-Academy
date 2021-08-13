@@ -1,2 +1,1 @@
-class Comment < ApplicationRecord; 
-end
+class Comment < ApplicationRecord; end

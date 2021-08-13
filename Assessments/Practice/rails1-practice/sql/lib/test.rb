@@ -29,17 +29,10 @@ def gold_cat_toys
   # Sort the toys by name alphabetically.
 
   execute(<<-SQL)
-    SELECT
-      name
-    FROM
-      cat_toys
-    JOIN toys ON
-      cat_toys.id = toys.id
-    WHERE
-      color = 'Gold'
-      AND
-      toys.name like '% %'
-    ORDER BY name ASC
+  SELECT name
+  FROM toys
+  WHERE color = 'Gold' AND name like '% %'
+  ORDER BY name
   SQL
 end
 
@@ -50,21 +43,16 @@ def extra_jet_toys
   # Sort the toys by name alphabetically.
 
   execute(<<-SQL)
-  SELECT
-    toys.name, COUNT(*)
-  FROM
-    toys
+  SELECT toys.name, COUNT(*)
+  FROM toys
   JOIN cat_toys ON
-    cat_toys.toy_id = toys.id
+  cat_toys.toy_id = toys.id
   JOIN cats ON
-    cats.id = cat_toys.cat_id
-  WHERE
-    cats.name = 'Jet'
-  GROUP BY
-    toys.name
-  HAVING
-    COUNT(*) > 1
-  ORDER BY toys.name ASC
+  cats.id = cat_toys.cat_id
+  WHERE cats.name = 'Jet'
+  GROUP BY toys.name
+  HAVING COUNT(*) > 1
+  ORDER BY toys.name
   SQL
 end
 
@@ -74,19 +62,15 @@ def cats_with_a_lot
   # Sort the cats by cat name alphabetically.
 
   execute(<<-SQL)
-  SELECT
-    cats.name
+  SELECT cats.name
   FROM cats
   JOIN cat_toys ON
-    cat_toys.cat_id = cats.id
+  cat_toys.cat_id = cats.id
   JOIN toys ON
-    cat_toys.toy_id = toys.id
-  GROUP BY
-    cats.id
-  HAVING
-    count(*) > 7
-  ORDER BY
-    name ASC
+  cat_toys.toy_id = toys.id
+  GROUP BY cats.id
+  HAVING COUNT(*) > 7
+  ORDER BY cats.name
   SQL
 end
 
@@ -97,22 +81,15 @@ def just_like_orange
   # Order by cats name alphabetically.
 
   execute(<<-SQL)
-  SELECT
-    name, breed
+  SELECT name, breed
   FROM cats
-  WHERE
-    cats.breed = (
-        SELECT
-          breed
-        FROM
-          cats
-        WHERE
-          name = 'Orange'
-    )
-    AND
-      name != 'Orange'
-    ORDER BY
-    name ASC
+  WHERE breed = (
+    SELECT breed
+    FROM cats
+    WHERE name = 'Orange'
+  )
+  AND name != 'Orange'
+  ORDER BY cats.name
   SQL
 end
 
@@ -123,27 +100,17 @@ def expensive_tastes
   # Sort by cat name alphabetically.
  
   execute(<<-SQL)
-    SELECT
-      cats.name, toys.name, toys.color
-    FROM
-      cats
-    JOIN cat_toys ON
-      cat_toys.cat_id = cats.id
-    JOIN toys ON
-      cat_toys.toy_id = toys.id
-    WHERE
-      toys.name = 'Tiger'
-      AND
-      toys.price = (
-        SELECT price
-        FROM toys
-        WHERE
-          name = 'Tiger'
-        ORDER BY
-          price desc
-        limit 1
-      )
-    ORDER BY
-      cats.name ASC
+  SELECT cats.name, toys.name, toys.color
+  FROM toys
+  JOIN cat_toys ON
+  cat_toys.toy_id = toys.id
+  JOIN cats ON
+  cat_toys.cat_id = cats.id
+  WHERE toys.name IN (
+    SELECT name
+    FROM toys
+    WHERE name = 'Tiger'
+  ) AND toys.color = 'Orchid'
+  ORDER BY cats.name
   SQL
 end
