@@ -1,0 +1,29 @@
+<form action="<%=cats_url%>" method='POST'>
+    <label>Name: 
+        <input type='text' name='cat[name]' value='<%@cat.name%>'>
+    </label>
+    <br><br>
+    <label>Color:
+        <select id = "color" name='cat[color]'>
+        <option value = "Select Color of Cat" disabled = "true" selected ="true">Select Color of the Cat</option>
+            <% Cat::COLORS.each_with_index do |color| %> 
+            <option value = '#{color}'> #{color} </option>
+            <%end%>
+        </select>
+    </label>
+    <br><br>
+    <label>Date_of_Birth: 
+        <input type='date' name='cat[birth_date]' value='<%@cat.birth_date%>'>
+    </label>
+    <br><br>
+    <label>Sex: 
+        M<input type='radio' name='cat[sex]' value='M' checked>
+        F<input type='radio' name='cat[sex]' value='F'>
+    </label>
+    <br><br>
+    <label>Description: 
+        <input type='text' name='cat[description]' value='<%@cat.description%>'>
+    </label>
+    <br><br>
+    <input type="submit" value="Create Cat">
+</form>
