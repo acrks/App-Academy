@@ -27,7 +27,18 @@ class CatsController < ApplicationController
         else
             render json: @cat.errors.full_messages, status: 422
         end
-        
-        
+    end
+
+    def edit
+        @cat = Cat.find_by(id: params[:id])
+        render :edit
+    end
+
+    def update
+        @cat = Cat.find_by(id: params[:id])
+        unless @cat 
+            render json: {error: "There is no such cat."}, status: 404
+        end
+    
     end
 end

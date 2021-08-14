@@ -1,0 +1,35 @@
+<form action="<%=cat_url(@cat)%>" method='POST'>
+    <input type='hidden' name='_method' value='PATCH'>
+    <label>Change Name: 
+        <input type='text' name='cat[name]' value='<%=@cat.name%>'>
+    </label>
+    <br><br>
+    <label>Change Color:
+        <select id = "color" name='cat[color]'>
+        <option value = "Select New Color of Cat" disabled = "true" selected ="true"><%= @cat.color%></option>
+            <% Cat::COLORS.each_with_index do |color| %> 
+            <option value='<%=color%>'> <%=color%> </option>
+            <%end%>
+        </select>
+    </label>
+    <br><br>
+    <label>Change Date of Birth: 
+        <input type='date' name='cat[birth_date]' value='<%=@cat.birth_date%>'>
+    </label>
+    <br><br>
+    <label>Change Sex: 
+        <% if @cat.sex = 'F'%>
+            M<input type='radio' name='cat[sex]' value='M'>
+            F<input type='radio' name='cat[sex]' value='F' checked>
+        <%else%>
+            M<input type='radio' name='cat[sex]' value='M'>
+            F<input type='radio' name='cat[sex]' value='F' checked>
+        <%end%>
+    </label>
+    <br><br>
+    <label>Change Description: 
+        <input type='textarea' name='cat[description]' value='<%=@cat.description%>'>
+    </label>
+    <br><br>
+    <input type="submit" value="Update Cat">
+</form>
