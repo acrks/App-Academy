@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <header><h1>Welcome to Cat4Ca$h</h1></header>
+    <% if logged_in? %>
+      <h2>Welcome,  <%= current_user.user_name %></h2>
+    <% else %>
+      <a href="<% new_user_url %>" > Sign Up</a> <!-- sign up link -->
+      <a href="<% new_session_url %>" > Login</a> <!-- login link -->
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>
