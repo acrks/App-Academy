@@ -32,14 +32,13 @@ p validate_sub(array, seq)
 # Input: root = [3,9,20,null,null,15,7]
 
 def max_depth(array, int = 0)
-    p array
-    return 0 if array.empty?
-    (0...array.length).each do |i|
-        if (array[(2 * int) + 1]) != 'null'
-            return 1 + max_depth(array[((2 * i) + 1)..-1], i) 
-        elsif (array[(2 * int) + 2]) != 'null'
-            return 1 + max_depth(array[((2 * i) + 2)..-1], i) 
-        end
+    return 0 if array.nil? || array.empty?
+    left_child = 2 * int + 1
+    right_child = 2 * int + 2
+    if array[left_child] != 'null'
+        return 1 + max_depth(array[left_child..-1], int + 1) 
+    elsif array[right_child] != 'null'
+        return 1 + max_depth(array[right_child..-1], int + 1) 
     end
 end
 
