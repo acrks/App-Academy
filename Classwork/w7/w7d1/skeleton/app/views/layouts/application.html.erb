@@ -9,14 +9,21 @@
   </head>
 
   <body>
-    <header><h1>Welcome to Cat4Ca$h</h1></header>
+    <header><h1>Welcome to Cats4Ca$h</h1></header>
     <% if logged_in? %>
       <h2>Welcome,  <%= current_user.user_name %></h2>
     <% else %>
-      <a href="<% new_user_url %>" > Sign Up</a> <!-- sign up link -->
-      <a href="<% new_session_url %>" > Login</a> <!-- login link -->
+      <a href="<%= new_user_url %>">Sign Up</a>
+      <br>
+      <a href="<%= new_sessions_url %>">Login</a>
     <% end %>
     
+    <form action="<%= sessions_url %>" method='post'>
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Logout">
+    </form>
+
+
     <%= yield %>
   </body>
 </html>

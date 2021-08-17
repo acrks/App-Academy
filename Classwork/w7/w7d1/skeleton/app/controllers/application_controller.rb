@@ -1,8 +1,9 @@
 class ApplicationController < ActionController::Base
 
-    helper_method :current_user, :logged_in?
+  helper_method :current_user, :logged_in?
 
-  skip_forgery_protection
+
+  # skip_before_action :verify_authenticity_token
 
   def current_user
     @current_user ||= User.find_by(session_token: session[:session_token])
@@ -16,13 +17,13 @@ class ApplicationController < ActionController::Base
   def require_logged_out
     redirect_to users_url if logged_in?
   end
-
+  
 
   def login(user) # instead of login_user! we named method login
     session[:session_token] = user.reset_session_token!
   end
 
-  def logged_in? # ture or false
+  def logged_in? # true or false
     !!current_user # not not true or not not false
   end
 

@@ -1,8 +1,9 @@
 class CatsController < ApplicationController
 
-  before_action :require_logged_in, only: [:new, :create, :edit, :update] 
+  before_action :require_logged_in, only: [:new, :create, :edit, :update]
 
   def index
+    puts "meow"
     @cats = Cat.all
     render :index
   end

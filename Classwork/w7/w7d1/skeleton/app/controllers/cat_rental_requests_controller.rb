@@ -5,7 +5,7 @@ class CatRentalRequestsController < ApplicationController
   end
 
   def create
-    @rental_request = CatRentalRequest.new(cat_rental_request_params)
+    @rental_request = current_user.rental_requests.new(cat_rental_requests_params)
     if @rental_request.save
       redirect_to cat_url(@rental_request.cat)
     else
@@ -33,7 +33,7 @@ class CatRentalRequestsController < ApplicationController
   def current_cat
     current_cat_rental_request.cat
   end
-
+  
   def cat_rental_request_params
     params.require(:cat_rental_request).permit(:cat_id, :end_date, :start_date, :status)
   end

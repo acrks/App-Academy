@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       login(@user)
-      redirect_to user_url(@user)
+      redirect_to user_url
     else
       render json: { error: "Could not create user." }, status: 422
     end
@@ -18,6 +18,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:user_name, :password_digest, :session_token)
+    params.require(:user).permit(:user_name, :password)
   end
 end
