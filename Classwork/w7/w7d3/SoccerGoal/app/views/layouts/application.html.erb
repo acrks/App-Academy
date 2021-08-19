@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Goal</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%# <h1>username2</h1> %>
+  <% if logged_in? %>
+    <h2> Welcome, <%=current_user.username%> ! </h2>
+  <% end %>
+    <%= yield %>
+  </body>
+</html>
