@@ -1,0 +1,28 @@
+.section-links {
+	display: flex;
+	font-family: $sans-serif;
+	font-size: 11px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 10px;
+    justify-content: center;
+	li {
+		margin-left: 10px;
+	}
+
+	sbutton {
+		background: none;
+		padding: 0px;
+		font-weight: normal;
+		border: none;
+	}
+
+	sbutton:hover {
+		background-color: $light-gray;
+	}
+
+    a {
+        text-transform: uppercase;
+    }
+}

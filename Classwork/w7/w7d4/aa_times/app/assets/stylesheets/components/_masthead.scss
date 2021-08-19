@@ -8,7 +8,6 @@
 .line {
 	width: 100%;
 	border-bottom: 1px solid $light-gray;
-
 }
 .language-nav {
 	position: absolute;
@@ -16,7 +15,7 @@
 	left: calc(50% - (177.78px/2));
 	background: white;
 	border: 1px solid $light-gray;
-	border-bottom: none;
+	border-bottom: 1px solid white;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 
