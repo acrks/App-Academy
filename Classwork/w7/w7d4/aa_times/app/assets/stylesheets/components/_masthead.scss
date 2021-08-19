@@ -5,7 +5,11 @@
 	border-bottom: 2px solid black;
 	position: relative;
 }
+.line {
+	width: 100%;
+	border-bottom: 1px solid $light-gray;
 
+}
 .language-nav {
 	position: absolute;
 	top: -15px;
@@ -29,9 +33,14 @@
 	}
 }
 
+.language-nav a:first-child{
+	font-weight: bold;
+}
+
 .logo {
 	max-width: 400px;
 	margin-top: 10px;
+	
 }
 
 .masthead-links {
@@ -71,4 +80,8 @@
 	strong {
 		color: green;
 	}
+}
+
+.masthead-links li:last-child {
+	border-right: none;
 }
