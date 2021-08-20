@@ -1,1 +1,33 @@
 // Use the gear_dropdown.png screenshot as a style guide
+#dropdown > i > ul {
+    display: none;
+}
+
+#dropdown {
+    cursor: pointer;
+    box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+}
+
+#dropdown:hover {
+    background-color: yellow;
+    display: inline-block;
+}
+
+#gear-dropdown {
+    display: block;
+}
+
+#gear-dropdown ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: black 5px 5px 10px;
+}
+
+#dropdown:hover .hidden {
+    display: block;
+}
+
