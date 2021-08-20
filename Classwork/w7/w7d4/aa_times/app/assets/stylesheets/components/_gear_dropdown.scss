@@ -1,5 +1,5 @@
 // Use the gear_dropdown.png screenshot as a style guide
-#dropdown > i > ul {
+#dropdown .hidden {
     display: none;
 }
 
@@ -8,26 +8,30 @@
     box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
 }
 
-#dropdown:hover {
-    background-color: yellow;
+.gear-dropdown {
+    position: relative;
     display: inline-block;
 }
 
 #gear-dropdown {
-    display: block;
-}
-
-#gear-dropdown ul {
-    display: none;
+    display: flex;
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 7.5%;
+    right: 10%;
+    background-color: white;
     flex-direction: column;
     cursor: pointer;
-    box-shadow: black 5px 5px 10px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    z-index: 10;
+    font-size: 12px;
 }
 
 #dropdown:hover .hidden {
     display: block;
+}
+
+.gear-dropdown {
+    font-family: $sans-serif;
 }
 
