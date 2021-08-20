@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redditclone</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+      body{
+        background-color: #738290;
+      }
+      .main{
+        width: 800px;
+        min-height: 100vh;
+        margin: auto;
+        padding: 30px;
+        border: solid grey;
+        border-width: 0 10px;
+        background-color: #FFFCF7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      img {
+        width: 100px;
+      }
+      .header{
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header>div{
+        display:flex;
+        align-items: center;
+      }
+      .header>div>h3,a{
+        padding: 10px;
+      }
+      button{
+        border-radius: 10%;
+        background-color:	#A1B5D8;
+      }
+
+      .button{
+        border-radius: 10%;
+        background-color:	#E4F0D0;
+        margin: 5px;
+      }
+      .subs-show{
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      h2{
+        margin-right: 50%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="<%=subs_url%>"><img src="/assets/icon.png" alt="redditclone icon"></a>
+      <div>
+        <% if logged_in? %>
+          <h3>Logged in as: <%= current_user.username %></h3>
+          <br>
+          <a class="button" href="<%=new_sub_url%>">Create a Sub!</a>
+          <br>
+          <a class="button" href="<%=subs_url%>">All Subs</a>
+          <br>
+          <div>
+            <form action="<%= session_url %>" method= 'post'>
+              <input type="hidden" name="_method" value="delete">
+              <%= auth_token %>
+              <button type="submit">Logout</button>
+            </form>
+          </div>
+        <% else %>
+          <a class="button" href="<%=new_user_url%>">Sign-Up!</a>
+          <br>
+          <a class="button" href="<%=new_session_url%>">Sign-In!</a>
+        <% end %>  
+      </div>
+    </div>
+    <div class="main">
+
+    <% if flash[:errors] %>
+      <p><%= flash[:errors].join(", ") %></p>
+    <% end %>
+
+    <%= yield %> 
+    </div>
+  </body>
+</html>

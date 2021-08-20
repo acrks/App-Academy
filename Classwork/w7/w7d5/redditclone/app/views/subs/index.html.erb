@@ -1,0 +1,12 @@
+<h2>All Sub-Reddits</h2>
+<ul class="subs-show">
+    <% @subs.each do |sub| %>
+ 
+        <li>
+        <a href="<%=sub_url(sub)%>"><%= sub.title %></a>
+        <br>
+        <p><%= sub.description %></p>
+        </li>
+ 
+    <% end %>
+</ul>

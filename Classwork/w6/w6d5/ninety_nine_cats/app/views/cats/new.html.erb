@@ -6,7 +6,7 @@
     <label>Color:
         <select id = "color" name='cat[color]'>
         <option value = "Select Color of Cat" disabled = "true" selected ="true">Select Color of the Cat</option>
-            <% Cat::COLORS.each_with_index do |color| %> 
+            <% Cat::COLORS.each do |color| %> 
             <option value='<%=color%>'> <%=color%> </option>
             <%end%>
         </select>

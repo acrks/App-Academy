@@ -1,0 +1,20 @@
+<h2><%= @sub.title %></h2>
+<div class="subs-show">
+    <h3><%= @sub.description %></h3>
+    <a class='button' href="<%=new_post_url%>">Create a Post!</a>
+</div>
+
+<ul>
+    <% if !@posts.nil? %>
+        <% @posts.each do |post| %>
+        <li>
+            <a href="<%=post_url(post)%>"><%= post.title %></a>
+            <p>by <a href="<%=user_url(post.author_id)%>"><%=post.author_id%></a></p>
+            <p><%= post.content %></p>
+            <p>Post at <%= post.created_at %></p>
+        </li>
+        <% end %>
+    <% else %>
+        <p>No post yet!</p>
+    <% end %>
+</ul>
