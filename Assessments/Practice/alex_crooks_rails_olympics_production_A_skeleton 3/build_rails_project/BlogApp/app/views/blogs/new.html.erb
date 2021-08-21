@@ -1,0 +1,16 @@
+<h1>Create a new Blog!</h1>
+
+<form action="<%= blogs_url %>" method="POST">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+    <label>Choose a blog title:
+        <input name ="blog[title]" value="">
+    </label>
+    <label>What do you have to say?
+        <input name ="blog[body]" value="">
+    </label>
+        <input type="hidden" name ="blog[author_id]" value=<%= User.last.id %>>
+    <button type="submit">Create A New Blog</button>
+</form>

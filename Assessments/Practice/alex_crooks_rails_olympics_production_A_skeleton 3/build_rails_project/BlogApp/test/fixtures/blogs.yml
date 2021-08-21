@@ -1,0 +1,19 @@
+# == Schema Information
+#
+# Table name: blogs
+#
+#  id        :bigint           not null, primary key
+#  title     :string           not null
+#  body      :text             not null
+#  author_id :integer          not null
+#
+
+one:
+  title: MyString
+  author_id: 1
+  body: MyString
+
+two:
+  title: MyString
+  author_id: 1
+  body: MyString

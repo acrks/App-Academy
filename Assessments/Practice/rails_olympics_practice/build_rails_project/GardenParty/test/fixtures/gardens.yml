@@ -1,0 +1,17 @@
+# == Schema Information
+#
+# Table name: gardens
+#
+#  id              :bigint           not null, primary key
+#  name            :string           not null
+#  size            :integer          not null
+#  garden_owner_id :integer          not null
+#
+
+one:
+  name: MyString
+  size: 1
+
+two:
+  name: MyString
+  size: 1

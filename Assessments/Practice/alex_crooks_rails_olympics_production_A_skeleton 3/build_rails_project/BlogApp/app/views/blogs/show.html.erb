@@ -1,0 +1,27 @@
+<h1>Let's look at a Blog!</h1>
+<article>
+
+<%= @blog.title %>
+<%= @blog.body %>
+
+</article>
+
+
+<h5>Comments:</h5>
+<ul><%@blog.comments.each do |comment| %>
+    <%= comment.body %>
+    <% end%>
+</ul>
+
+<form action="<%= comments_url %>" method="POST">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+    <label>Write a Comment:
+        <input name ="comment[body]" value="">
+    </label>
+        <input type="hidden" name ="comment[author_id]" value=<%= User.last.id %>>
+        <input type="hidden" name ="comment[blog_id]" value=<%= @blog.id %>>
+    <button type="submit">Create A Comment</button>
+</form>

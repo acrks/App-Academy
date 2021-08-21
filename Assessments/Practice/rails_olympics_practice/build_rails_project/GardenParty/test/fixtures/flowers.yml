@@ -1,0 +1,19 @@
+# == Schema Information
+#
+# Table name: flowers
+#
+#  id          :bigint           not null, primary key
+#  flower_type :string           not null
+#  gardener_id :integer          not null
+#  garden_id   :integer          not null
+#
+
+one:
+  type: 
+  user_id: 1
+  garden_id: 1
+
+two:
+  type: 
+  user_id: 1
+  garden_id: 1
