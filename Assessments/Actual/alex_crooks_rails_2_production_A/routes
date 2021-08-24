@@ -1,0 +1,15 @@
+     Prefix Verb   URI Pattern               Controller#Action
+      users GET    /users(.:format)          users#index
+            POST   /users(.:format)          users#create
+   new_user GET    /users/new(.:format)      users#new
+       user GET    /users/:id(.:format)      users#show
+      poems POST   /poems(.:format)          poems#create
+   new_poem GET    /poems/new(.:format)      poems#new
+  edit_poem GET    /poems/:id/edit(.:format) poems#edit
+       poem PATCH  /poems/:id(.:format)      poems#update
+            PUT    /poems/:id(.:format)      poems#update
+new_session GET    /session/new(.:format)    sessions#new
+    session DELETE /session(.:format)        sessions#destroy
+            POST   /session(.:format)        sessions#create
+            GET    /poems(.:format)          poems#index
+            GET    /poems/:id(.:format)      poems#show

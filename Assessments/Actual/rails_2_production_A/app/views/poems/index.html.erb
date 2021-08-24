@@ -1,0 +1,12 @@
+<h1>All Poems</h1>
+<form action = "<%= poems_url %>" value = "POST">
+<%= @poems.each do |poem| %>
+    <p><%= poem.title %></p>
+    <p><%= poem.stanzas %></p>
+    <% if poem.complete %>
+    <p>Done</p>
+    <% end %>
+    <a href="<%=edit_poem_url(poem) %>">Edit Poem</a>
+<% end %>
+</form>
+<a href="<%=new_poem_url%>">Create New Poem</a>

@@ -1,0 +1,22 @@
+<h1>Add a New Goal</h1>
+<form action="<%= user_url(current_user) %>" method="POST">
+    <input
+      type="hidden"
+      name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+    <label>Name
+        <input name ="goal[name]">
+    </label>
+    <label>Details
+        <input name ="goal[details]">
+    </label>
+    <label>Complete?
+    <label>True
+        <input type = "radio" name ="goal[status]" value = "true">
+    </label>
+    <label>False
+        <input type = "radio" name ="goal[status]" value = "true">
+    </label>
+    </label>
+    <button>Add a New Goal</button>
+</form>

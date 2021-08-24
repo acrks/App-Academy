@@ -1,0 +1,11 @@
+<h1>Edit Poem</h1>
+<form action = "<%=edit_poem_url(@poem)%>" method = "GET">
+<label>Title
+    <input name = "poem[title]" value = "<%= @poem.title %>">
+</label>
+<label>Stanzas
+    <input name = "poem[stanzas]" value = "<%= @poem.stanzas %>">
+</label>
+<button>Edit Poem</button>
+</form>
+
