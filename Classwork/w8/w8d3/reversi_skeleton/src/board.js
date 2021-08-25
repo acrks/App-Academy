@@ -47,7 +47,7 @@ Board.prototype.isValidPos = function (pos) {
  */
 Board.prototype.getPiece = function (pos) {
   if(!this.isValidPos(pos)) {
-    throw new Error(' Not valid pos!');
+    throw new Error('Not valid pos!');
   }
   return this.grid[pos[0]],[pos[1]]
 };
