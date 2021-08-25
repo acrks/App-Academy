@@ -109,56 +109,29 @@ Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip) {
 
 };
 
-      testBoardLongHorzDiagonal = new Board();
-
-      testBoardLongHorzDiagonal.grid[1][1] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[1][3] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[1][4] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[1][6] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[1][7] = new Piece("white")
-
-      testBoardLongHorzDiagonal.grid[2][0] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[2][2] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[2][3] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[2][4] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[2][5] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[2][7] = new Piece("black")
-
-      testBoardLongHorzDiagonal.grid[3][0] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[3][2] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[3][3] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[3][4] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[3][5] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[3][7] = new Piece("black")
-
-      testBoardLongHorzDiagonal.grid[4][0] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[4][1] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[4][3] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[4][4] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[4][6] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[4][7] = new Piece("black")
-
-      testBoardLongHorzDiagonal.grid[5][0] = new Piece("white")
-
-      testBoardLongHorzDiagonal.grid[6][2] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[6][3] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[6][4] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[6][5] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[6][6] = new Piece("black")
-
-      testBoardLongHorzDiagonal.grid[7][1] = new Piece("black")
-      testBoardLongHorzDiagonal.grid[7][2] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[7][3] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[7][4] = new Piece("white")
-      testBoardLongHorzDiagonal.grid[7][5] = new Piece("white")
-      testBoardLongHorzDiagonal._positionsToFlip([1, 0], "white", [1, 0])
-
 /**
  * Checks that a position is not already occupied and that the color
  * taking the position will result in some pieces of the opposite
  * color being flipped.
  */
 Board.prototype.validMove = function (pos, color) {
+  if(this.isOccupied(pos)) {
+    return false;
+  }
+  let masterarray = []
+  for(i = 0; i < Board.DIRS.length; i++) {
+    // master array for each of the positionsToFlip results
+    // with each fo the Board.DIRS[i] (checking each direction)
+    let test = this._positionsToFlip(pos, color, Board.DIRS[i])
+    // if positionsToFlip comes back with an array greater than 0, 
+    // it's a valid move, add to masterarray
+    if (test.length > 0) {
+      return true;
+    }
+  }
+  // check if that master array is empty (no positions to flip)
+  // if it is, return false
+  return false;
 };
 
 /**
@@ -168,6 +141,24 @@ Board.prototype.validMove = function (pos, color) {
  * Throws an error if the position represents an invalid move.
  */
 Board.prototype.placePiece = function (pos, color) {
+  if(!this.validMove(pos, color)) 
+  {
+    throw new Error('Invalid move!');
+  }
+  // Is a valid move, so change the first piece to 
+  this.grid[pos[0]][pos[1]] = new Piece(color);
+  let masterarray = []
+  for(i = 0; i < Board.DIRS.length; i++) {
+    let posToFlip = this._positionsToFlip(pos, color, Board.DIRS[i])
+    masterarray = masterarray.concat(posToFlip)
+  }
+
+  for(j = 0; j < masterarray.length; j++) {
+    let piecePos = masterarray[j];
+    let piecePosX = piecePos[0];
+    let piecePosY = piecePos[1];
+    this.grid[piecePosX][piecePosY].flip();
+  }
 };
 
 /**
