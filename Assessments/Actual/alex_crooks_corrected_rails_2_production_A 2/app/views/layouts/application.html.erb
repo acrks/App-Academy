@@ -12,8 +12,8 @@
   <% if flash[:errors] %>
     <%= flash[:errors].join(",") %>
   <% end %>
+  
   <% if logged_in? %>
-
   <form action = "<%= session_url%>" method = "POST">
     <input type = "hidden" name = "_method" value = "DELETE"/>
     <button>Sign Out</button>

@@ -13,8 +13,7 @@
 class Poem < ApplicationRecord
     validates :title, :stanzas, presence: true
     validates :complete, inclusion: [true, false]
-    
-    attr_accessor :author_id
+
 
     belongs_to :author,
         foreign_key: :author_id,

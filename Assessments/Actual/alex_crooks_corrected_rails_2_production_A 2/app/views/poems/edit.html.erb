@@ -1,11 +1,20 @@
-<h1>Edit Poem</h1>
-<form action = "<%=edit_poem_url(@poem)%>" method = "GET">
+<h1>Edit Poem Form</h1>
+<form action = "<%= poem_url(@poem) %>" method = "POST">
+<input type='hidden' name='_method' value='PATCH'>
 <label>Title
     <input name = "poem[title]" value = "<%= @poem.title %>">
 </label>
 <label>Stanzas
     <input name = "poem[stanzas]" value = "<%= @poem.stanzas %>">
 </label>
-<button>Edit Poem</button>
+<label>Complete?
+<label>True
+    <input type = "radio" name = "poem[complete]" value = "<%= @poem.complete %>">
+</label>
+<label>False
+    <input type = "radio" name = "poem[complete]" value = "<%= @poem.complete %>">
+</label>
+</label>
+<button>Save Edited Poem</button>
 </form>
 

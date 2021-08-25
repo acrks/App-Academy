@@ -1,5 +1,4 @@
-class PoemsController < ApplicationController
-    
+class PoemsController < ApplicationController    
     before_action :require_logged_in
     
     def new
@@ -14,31 +13,31 @@ class PoemsController < ApplicationController
 
     def create
         @poem = Poem.new(poem_params)
-        @poem.author_id = params[:author_id]
+        @poem.author_id = current_user.id
         if @poem.save
-            redirect_to poems_url(@poem)
+            redirect_to poems_url
         else
-            flash[:errors] = ["Stanzas can't be blank"]
+            flash[:errors] = @poem.errors.full_messages
             render :new
         end
     end
 
     def edit
-        @poem = current_user.poems.find_by(id: params[:id])
+        @poem = Poem.find_by(id: params[:id])
         render :edit
     end
 
     def update
         @poem = current_user.poems.find_by(id: params[:id])
-        if @poem
-            @poem.update!(poem_params)
+        if @poem && @poem.update(poem_params)
             redirect_to poems_url
         else
             flash[:errors] = ["Something went wrong!"]
+            render :edit
         end
     end
 
     def poem_params
-        params.require(:poem).permit(:title, :stanzas, :complete, :author_id)
+        params.require(:poem).permit(:title, :stanzas, :complete)
     end
 end
