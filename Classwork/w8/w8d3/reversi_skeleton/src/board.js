@@ -49,7 +49,7 @@ Board.prototype.getPiece = function (pos) {
   if(!this.isValidPos(pos)) {
     throw new Error('Not valid pos!');
   }
-  return this.grid[pos[0]],[pos[1]]
+  return this.grid[pos[0]][pos[1]]
 };
 
 /**
@@ -57,12 +57,19 @@ Board.prototype.getPiece = function (pos) {
  * matches a given color.
  */
 Board.prototype.isMine = function (pos, color) {
+  let aPiece = this.getPiece(pos)
+  if (aPiece === undefined) {
+    return aPiece}
+  else {
+    return aPiece.color === color
+  }
 };
 
 /**
  * Checks if a given position has a piece on it.
  */
 Board.prototype.isOccupied = function (pos) {
+  return this.getPiece(pos) != undefined
 };
 
 /**
@@ -78,8 +85,73 @@ Board.prototype.isOccupied = function (pos) {
  *
  * Returns empty array if no pieces of the opposite color are found.
  */
-Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip){
+Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip) {
+  //     valid position               my color               empty
+  let newPos = [pos[0] + dir[0] , pos[1] + dir[1]]
+
+  if (!piecesToFlip) {
+    piecesToFlip = []
+  }
+  else {
+    piecesToFlip.push(pos)
+  }
+  
+  if (!this.isValidPos(newPos)) {
+    return []; 
+  }
+    else if (!this.isOccupied(newPos)) {
+      return [];
+  } else if (this.isMine(newPos, color) ) {
+      return piecesToFlip;
+  } else {
+      return this._positionsToFlip(newPos, color, dir, piecesToFlip);
+  }
+
 };
+
+      testBoardLongHorzDiagonal = new Board();
+
+      testBoardLongHorzDiagonal.grid[1][1] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[1][3] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[1][4] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[1][6] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[1][7] = new Piece("white")
+
+      testBoardLongHorzDiagonal.grid[2][0] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[2][2] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[2][3] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[2][4] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[2][5] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[2][7] = new Piece("black")
+
+      testBoardLongHorzDiagonal.grid[3][0] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[3][2] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[3][3] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[3][4] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[3][5] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[3][7] = new Piece("black")
+
+      testBoardLongHorzDiagonal.grid[4][0] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[4][1] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[4][3] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[4][4] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[4][6] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[4][7] = new Piece("black")
+
+      testBoardLongHorzDiagonal.grid[5][0] = new Piece("white")
+
+      testBoardLongHorzDiagonal.grid[6][2] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[6][3] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[6][4] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[6][5] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[6][6] = new Piece("black")
+
+      testBoardLongHorzDiagonal.grid[7][1] = new Piece("black")
+      testBoardLongHorzDiagonal.grid[7][2] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[7][3] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[7][4] = new Piece("white")
+      testBoardLongHorzDiagonal.grid[7][5] = new Piece("white")
+      testBoardLongHorzDiagonal._positionsToFlip([1, 0], "white", [1, 0])
 
 /**
  * Checks that a position is not already occupied and that the color
