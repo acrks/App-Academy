@@ -112,7 +112,7 @@ function joinArrays(arr1, arr2) {
             result.push(arr2.shift());
         };
     };
-    return result.concat(arr1).concat(arr2)
+    return result.concat(arr1, arr2)
 }
 
 let arr = [453,23,6755,75,3,4,6,0,7];
