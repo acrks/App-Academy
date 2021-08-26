@@ -145,7 +145,7 @@ Board.prototype.placePiece = function (pos, color) {
   {
     throw new Error('Invalid move!');
   }
-  // Is a valid move, so change the first piece to 
+  
   this.grid[pos[0]][pos[1]] = new Piece(color);
   var masterarray = []
   for(i = 0; i < Board.DIRS.length; i++) {

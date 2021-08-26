@@ -67,25 +67,26 @@ function deepDup(arr) {
 
 
 function bsearch(arr, target) {
-    if (arr.length <= 0) {return -1}
+    if (!arr.length) {return -1}
 
-    let mid = Math.ceil((arr.length) / 2)
+    let mid = Math.floor(arr.length / 2)
     let left = arr.slice(0, mid)
-    let right = arr.slice(mid, arr.length)
+    let right = arr.slice(mid + 1)
     
     if (arr[mid] === target) {
-        return mid
+        return mid;
     } else if (target < arr[mid]) {
         let leftVal = bsearch(left, target);
-        if (leftVal > 0) {return leftVal}
+        return leftVal;
     } else {
         let rightVal = bsearch(right, target);
-        if (rightVal > 0) {return rightVal + mid}
+        if (rightVal === -1) {return -1}
+        else {return rightVal + mid + 1};
     }
 }
 
-// arr1 = [1,2,3,4,5,6,7]
-// console.log(bsearch(arr1, 3))
+arr1 = [1,2,3,4,5,6]
+console.log(bsearch(arr1, 5))
 
 
 function mergesort(arr) {
@@ -115,5 +116,5 @@ function joinArrays(arr1, arr2) {
     return result.concat(arr1, arr2)
 }
 
-let arr = [453,23,6755,75,3,4,6,0,7];
-console.log(mergesort(arr))
+// let arr = [453,23,6755,75,3,4,6,0,7];
+// console.log(mergesort(arr))
