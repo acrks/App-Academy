@@ -147,7 +147,7 @@ Board.prototype.placePiece = function (pos, color) {
   }
   // Is a valid move, so change the first piece to 
   this.grid[pos[0]][pos[1]] = new Piece(color);
-  let masterarray = []
+  var masterarray = []
   for(i = 0; i < Board.DIRS.length; i++) {
     let posToFlip = this._positionsToFlip(pos, color, Board.DIRS[i])
     masterarray = masterarray.concat(posToFlip)

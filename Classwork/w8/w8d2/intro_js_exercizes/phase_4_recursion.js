@@ -89,27 +89,31 @@ function bsearch(arr, target) {
 
 
 function mergesort(arr) {
-    if (arr.length <= 1) {return arr[0]}
+    if (arr.length <= 1) 
+    {
+        return arr
+    }
 
-    let mid = parseInt(arr.length / 2);
+    let mid = Math.floor(arr.length / 2);
     let left = arr.slice(0, mid);
-    let right = arr.slice(mid + 1, arr.length);
+    let right = arr.slice(mid);
 
-    return joinArrays(mergesort(left), mergesort(right));
+    let leftSorted = mergesort(left);
+    let rightSorted = mergesort(right);
+    return joinArrays(leftSorted, rightSorted);
 }
 
 function joinArrays(arr1, arr2) {
     let result = [];
-    while ((arr1.length > 0 && arr2.length > 0)) {
-        if (arr1[0] <= arr2[0]) {
-            result.push(arr1.pop());
+    while (arr1.length && arr2.length) {
+        if (arr1[0] < arr2[0]) {
+            result.push(arr1.shift());
         } else {
-            result.push(arr2.pop());
-        }
-    }
-
+            result.push(arr2.shift());
+        };
+    };
     return result.concat(arr1).concat(arr2)
 }
 
-let arr = [453,23,6755,75,3,4,6,0,7]
+let arr = [453,23,6755,75,3,4,6,0,7];
 console.log(mergesort(arr))
