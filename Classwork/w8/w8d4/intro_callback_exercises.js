@@ -72,13 +72,14 @@ function askIfGreaterThan(el1, el2, callback) {
         }
         else {
             callback(false);
+           
         }
-        reader.close();
+        // reader.close();
     });
   }
   
   // Once you're done testing askIfGreaterThan with dummy arguments, write this.
-  function innerBubbleSortLoop(arr, i, madeAnySwaps = false, outerBubbleSortLoop) {
+  function innerBubbleSortLoop(arr, i, madeAnySwaps, outerBubbleSortLoop) {
     // Do an "async loop":
     // 1. If (i == arr.length - 1), call outerBubbleSortLoop, letting it
     //    know whether any swap was made.
@@ -97,12 +98,14 @@ function askIfGreaterThan(el1, el2, callback) {
                 arr[i + 1] = temp;
                 madeAnySwaps = true;
             }
-            innerBubbleSortLoop(arr, i+1, madeAnySwaps, outerBubbleSortLoop);
+            innerBubbleSortLoop(arr, i+1, madeAnySwaps, outerBubbleSortLoop)
+      
         });
+      }
     }
-}
+    
 
-innerBubbleSortLoop([12,5,4,44], 0);
+// innerBubbleSortLoop([1,2,4,44], 0);
   
   // Once you're done testing innerBubbleSortLoop, write outerBubbleSortLoop.
   // Once you're done testing outerBubbleSortLoop, write absurdBubbleSort.
@@ -111,12 +114,22 @@ innerBubbleSortLoop([12,5,4,44], 0);
     function outerBubbleSortLoop(madeAnySwaps) {
       // Begin an inner loop if you made any swaps. Otherwise, call
       // `sortCompletionCallback`.
+      if(madeAnySwaps){
+        innerBubbleSortLoop(arr, 0, false, outerBubbleSortLoop)
+      }else {
+        sortCompletionCallback(arr)
+      }
     }
-  
+    outerBubbleSortLoop(true)
     // Kick the first outer loop off, starting `madeAnySwaps` as true.
   }
   
-  absurdBubbleSort([3, 2, 1], function(arr) {
-    console.log("Sorted array: " + JSON.stringify(arr));
-    reader.close();
-  });
+  // absurdBubbleSort([3, 2, 1], function(arr) {
+  //   console.log("Sorted array: " + JSON.stringify(arr));
+  //   reader.close();
+  // });
+
+  
+Function.prototype.myBind = function (context) {
+  return function (this, context)
+}
