@@ -159,24 +159,24 @@ class Lamp {
 
 Function.prototype.myThrottle = function (interval) {
     let tooSoon = false;
-    return function () {
+    return () =>  {
         if(!tooSoon) {
             tooSoon = true;
             setTimeout(function () {
                 tooSoon = false}, interval) //is this right?
-            this(interval)
+            this();
         }
     }
 }
 
 
-  class Neuron {
-  fire() {
-    console.log("Firing!");
-  }
-}
+//   class Neuron {
+//   fire() {
+//     console.log("Firing!");
+//   }
+// }
 
-const neuron = new Neuron();
+
 // When we create a new Neuron,
 // we can call #fire as frequently as we want
 
@@ -184,11 +184,10 @@ const neuron = new Neuron();
 // the #fire function of our neuron so that it can only fire
 // once every 500ms:
 
-neuron.fire = neuron.fire.myThrottle(500);
 
-interval = setInterval(() => {
-  neuron.fire();
-}, 10);
+// interval = setInterval(() => {
+//   neuron.fire();
+// }, 100);
 
 // This time, if our Function#myThrottle worked correctly,
 // the Neuron#fire function should only be able to execute
@@ -197,12 +196,17 @@ interval = setInterval(() => {
 
 // If we want this behavior for ALL neurons, we can do the same logic in the constructor:
 
-// class Neuron {
-//   constructor() {
-//     this.fire = this.fire.myThrottle(500);
-//   }
+class Neuron {
+  constructor() {
+    this.fire = this.fire.myThrottle(500);
+  }
+  
+  fire() {
+    console.log("Firing!");
+  }
+}
 
-//   fire() {
-//     console.log("Firing!");
-//   }
-// }
+const neuron = new Neuron();
+neuron.fire;
+
+ 
