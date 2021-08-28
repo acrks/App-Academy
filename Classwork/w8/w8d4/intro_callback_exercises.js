@@ -149,13 +149,13 @@ class Lamp {
   
   const lamp = new Lamp();
   
-  turnOn(); // should not work the way we want it to
+//   turnOn(); // should not work the way we want it to
   
   const boundTurnOn = turnOn.bind(lamp);
   const myBoundTurnOn = turnOn.myBind(lamp);
   
-  boundTurnOn(); // should say "Turning on a lamp"
-  myBoundTurnOn(); // should say "Turning on a lamp"
+//   boundTurnOn(); // should say "Turning on a lamp"
+//   myBoundTurnOn(); // should say "Turning on a lamp"
 
 Function.prototype.myThrottle = function (interval) {
     let tooSoon = false;
@@ -206,7 +206,45 @@ class Neuron {
   }
 }
 
-const neuron = new Neuron();
-neuron.fire;
+// const neuron = new Neuron();
+// neuron.fire;
 
- 
+class SearchBar {
+    constructor() {
+      this.query = "";
+  
+      this.type = this.type.bind(this);
+      this.search = this.search.bind(this);
+    }
+  
+    type(letter) {
+      this.query += letter;
+      this.search();
+    }
+  
+    search() {
+      console.log(`searching for ${this.query}`);
+    }
+  }
+
+  const searchBar = new SearchBar();
+
+  const queryForHelloWorld = () => {
+    searchBar.type("h");
+    searchBar.type("e");
+    searchBar.type("l");
+    searchBar.type("l");
+    searchBar.type("o");
+    searchBar.type(" ");
+    searchBar.type("w");
+    searchBar.type("o");
+    searchBar.type("r");
+    searchBar.type("l");
+    searchBar.type("d");
+  };
+  
+  queryForHelloWorld();
+
+  Function.prototype.myDebounce = function (interval) {
+      
+  }

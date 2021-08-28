@@ -80,13 +80,13 @@ function bsearch(arr, target) {
         return leftVal;
     } else {
         let rightVal = bsearch(right, target);
-        if (rightVal === -1) {return -1}
+        if (rightVal < 0) {return -1}
         else {return rightVal + mid + 1};
     }
 }
 
 arr1 = [1,2,3,4,5,6]
-console.log(bsearch(arr1, 5))
+console.log(bsearch(arr1, 6))
 
 
 function mergesort(arr) {
