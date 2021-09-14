@@ -1,4 +1,4 @@
-import { RECEIVE_TODO, RECEIVE_TODOS } from "../actions/todo_Actions";
+import { RECEIVE_TODO, RECEIVE_TODOS, REMOVE_TODO } from "../actions/todo_Actions";
 
 const todosReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
@@ -9,9 +9,12 @@ const todosReducer = (oldState = {}, action) => {
             return newState;
         case RECEIVE_TODOS:
             for(let i = 0; i < action.todos.length; i++) {
-                let indi_action = action.todos[i]
-                newState[indi_action.id] = indi_action
+                let todo = action.todos[i]
+                newState[todo.id] = todo
             }
+            return newState;
+        case REMOVE_TODO: 
+            delete newState[action.todo.id];
             return newState;
         default:
             return oldState
