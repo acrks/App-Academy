@@ -32,10 +32,10 @@ class Game extends React.Component {
                 message = "Congratulations, You Won!"
             }
             else {
-                message = "Sorry, you swept a bomb :("
+                message = "Sorry, you swept a mine :("
             }
             return (
-                <div class = "message">
+                <div className = "message">
                     {message}<br /><br />
                     {button}
                 </div>
@@ -43,7 +43,9 @@ class Game extends React.Component {
         } 
         else {
             return(
-                <div>
+                <div className = "game">
+                    <h2>Minesweeper</h2>
+                    <p/>Click to explore a tile.<br/>Alt + click to flag a tile.<p/>
                     <Board board={this.state.board} updateGame={this.updateGame} />
                 </div>
             );
