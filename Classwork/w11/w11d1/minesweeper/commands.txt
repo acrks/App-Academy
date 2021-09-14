@@ -1,0 +1,40 @@
+npm init --yes
+npm install package webpack webpack-cli @babel/core @babel/preset-env @babel/preset-react babel-loader react react-dom
+touch webpack.config.js
+
+*** ADD THIS LINE TO PACKAGE.JSON ***
+"webpack": "webpack --mode=development --watch"
+*** ADD THIS LINE TO PACKAGE.JSON ***
+
+touch .gitignore
+
+*** ADD THIS TO .GITIGNORE ***
+node_modules
+bundle.js
+bundle.js.map
+*** ADD THIS TO .GITIGNORE ***
+
+CREATE FRONTEND FOLDER
+    ADD ENTRY.JSX
+    CREATE STYLES FOLDER
+        ADD CSS RESET
+
+touch index.html
+
+*** ADD THIS TO ENTRY.JSX ***
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function Root() {
+    return (
+        <div>
+            <h1>React 1-Up</h1>
+        </div>
+    )
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const root = document.getElementById('root');
+    ReactDOM.render(<Root />, root);
+});

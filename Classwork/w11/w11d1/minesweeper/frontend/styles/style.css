@@ -1,0 +1,45 @@
+body {
+    height: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(#e66465, #9198e5)
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: inset;
+    background-color: lightgray;
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgb(92, 89, 89);
+    width: 40px;
+    height: 40px;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+.explored {
+    border-style: outset;
+    background-color: white;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px black ;
+    box-shadow: 1px 1px 1px 1px 4px black;
+}
