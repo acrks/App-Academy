@@ -15,7 +15,7 @@ const stepsReducer = ( oldState = {}, action) => {
               newState[step.id] = step;
           }
           return newState;
-      case REMOVE_TODO: 
+      case REMOVE_STEP: 
           delete newState[action.step.id];
           return newState;
       default:
@@ -24,3 +24,8 @@ const stepsReducer = ( oldState = {}, action) => {
 }
 
 export default stepsReducer;
+
+/*const newTodos = [{ id: 1, title: 'Learn Redux', body: 'It is fundamental', done: false }, { id: 2, title: 'Forget Redux', body: 'It is also fundamental', done: false }];
+const newSteps = [{ id: 1, title: 'Dispatch actions', done: false, todo_id: 1 }, { id: 2, title: 'Dispatch reducers', done: false, todo_id: 1 }];
+store.dispatch(receiveTodos(newTodos));
+store.dispatch(receiveSteps(newSteps));*/
