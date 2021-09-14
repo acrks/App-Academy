@@ -15,7 +15,7 @@ const stepsReducer = ( oldState = {}, action) => {
               newState[step.id] = step;
           }
           return newState;
-      case REMOVE_TODO: 
+      case REMOVE_STEP: 
           delete newState[action.step.id];
           return newState;
       default:
