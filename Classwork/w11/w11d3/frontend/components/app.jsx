@@ -1,10 +1,10 @@
 import React from 'react'
+import TodoListContainer from "./todo_list/todo_list_container"
 
 function App() {
-    console.log(store)
     return (
         <div>
-            App is working
+            <TodoListContainer />
         </div>
     )
 }
