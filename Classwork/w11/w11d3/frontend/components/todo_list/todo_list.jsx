@@ -12,7 +12,7 @@ const TodoIndex = (props) => {
                 <TodoListItem key = {todo.id} todo = {todo}/>
                 )}
             </ul>
-            <TodoForm receiveTodo = {props.todos.receiveTodo}/>
+            <TodoForm receiveTodo = {props.receiveTodo} removeTodo = {props.removeTodo}/>
         </div>
     )
 }

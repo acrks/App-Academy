@@ -3,6 +3,7 @@ import React from "react";
 class TodoForm extends React.Component {
     constructor(props) {
         super(props)
+        console.log(this.props.receiveTodo)
         this.state = {
             id: this.uniqueId(),
             title: "",
@@ -33,29 +34,24 @@ class TodoForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        receiveTodo(this.state)
+        this.props.receiveTodo(this.state)
     }
 
     render() {
         return (
             <form onSubmit = {this.handleSubmit}>
                 <h2>Add a Todo</h2>
-                <label>Title:
+                <label>Title:<br/ >
                     <input type = "text" value = {this.state.title} onChange = {this.updateTitle}/>
                 </label>
                 <br/>
                 <br/>
-                <label>Body:
+                <label>Body:<br/ >
                     <input type = "text" value = {this.state.body} onChange = {this.updateBody}/>
                 </label>
                 <br/>
                 <br/>
-                {/* <label>Completed?
-                    <input type = "radio" value = {this.state.done} onChange = {this.updateCompleted}/>Yes
-                </label> */}
-                <br/>
-                <br/>
-                <input type="submit" value="add tea!!!" />
+                <button>Submit</button>
             </form>
         )
     }
