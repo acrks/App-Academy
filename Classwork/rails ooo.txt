@@ -1,0 +1,6 @@
+rails _5.2.3_ new my_project_name -G --database=postgresql
+Gem uninstall rails
+Gem uninstall railties
+Gem install rails —version=5.2.3
+Rbenv rehash
+Rails -v
