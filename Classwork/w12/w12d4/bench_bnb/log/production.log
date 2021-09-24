@@ -1,0 +1,1270 @@
+I, [2019-11-11T17:35:34.071258 #1]  INFO -- : [252439a7-f753-4f04-a416-aa7344e78aed] Started GET "/" for 192.168.144.1 at 2019-11-11 17:35:34 +0000
+I, [2019-11-11T17:35:34.207713 #1]  INFO -- : [252439a7-f753-4f04-a416-aa7344e78aed] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:35:34.336516 #1]  INFO -- : [252439a7-f753-4f04-a416-aa7344e78aed]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:35:34.350287 #1]  INFO -- : [252439a7-f753-4f04-a416-aa7344e78aed]   Rendered static_pages/root.html.erb within layouts/application (12.7ms)
+I, [2019-11-11T17:35:34.404486 #1]  INFO -- : [252439a7-f753-4f04-a416-aa7344e78aed] Completed 500 Internal Server Error in 195ms
+F, [2019-11-11T17:35:34.413664 #1] FATAL -- : [252439a7-f753-4f04-a416-aa7344e78aed]   
+F, [2019-11-11T17:35:34.414411 #1] FATAL -- : [252439a7-f753-4f04-a416-aa7344e78aed] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:35:34.416297 #1] FATAL -- : [252439a7-f753-4f04-a416-aa7344e78aed]     4:     <title>BenchBnb</title>
+[252439a7-f753-4f04-a416-aa7344e78aed]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[252439a7-f753-4f04-a416-aa7344e78aed]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[252439a7-f753-4f04-a416-aa7344e78aed]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[252439a7-f753-4f04-a416-aa7344e78aed]     8:     <%= csrf_meta_tags %>
+[252439a7-f753-4f04-a416-aa7344e78aed]     9:     <%= javascript_include_tag 'application' %>
+[252439a7-f753-4f04-a416-aa7344e78aed]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:35:34.417460 #1] FATAL -- : [252439a7-f753-4f04-a416-aa7344e78aed]   
+F, [2019-11-11T17:35:34.418510 #1] FATAL -- : [252439a7-f753-4f04-a416-aa7344e78aed] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:35:34.962843 #1]  INFO -- : [eab764ac-2f6b-4345-92da-25256c012c05] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:35:34 +0000
+F, [2019-11-11T17:35:34.965058 #1] FATAL -- : [eab764ac-2f6b-4345-92da-25256c012c05]   
+F, [2019-11-11T17:35:34.967921 #1] FATAL -- : [eab764ac-2f6b-4345-92da-25256c012c05] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:35:34.968967 #1] FATAL -- : [eab764ac-2f6b-4345-92da-25256c012c05]   
+F, [2019-11-11T17:35:34.970314 #1] FATAL -- : [eab764ac-2f6b-4345-92da-25256c012c05] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[eab764ac-2f6b-4345-92da-25256c012c05] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[eab764ac-2f6b-4345-92da-25256c012c05] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[eab764ac-2f6b-4345-92da-25256c012c05] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[eab764ac-2f6b-4345-92da-25256c012c05] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[eab764ac-2f6b-4345-92da-25256c012c05] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[eab764ac-2f6b-4345-92da-25256c012c05] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[eab764ac-2f6b-4345-92da-25256c012c05] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[eab764ac-2f6b-4345-92da-25256c012c05] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[eab764ac-2f6b-4345-92da-25256c012c05] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:35:37.511321 #1]  INFO -- : [6333b4a2-c4c2-4632-984f-d10016be86d5] Started GET "/" for 192.168.144.1 at 2019-11-11 17:35:37 +0000
+I, [2019-11-11T17:35:37.513247 #1]  INFO -- : [6333b4a2-c4c2-4632-984f-d10016be86d5] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:35:37.514881 #1]  INFO -- : [6333b4a2-c4c2-4632-984f-d10016be86d5]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:35:37.518524 #1]  INFO -- : [6333b4a2-c4c2-4632-984f-d10016be86d5]   Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+I, [2019-11-11T17:35:37.568485 #1]  INFO -- : [6333b4a2-c4c2-4632-984f-d10016be86d5] Completed 500 Internal Server Error in 54ms
+F, [2019-11-11T17:35:37.573167 #1] FATAL -- : [6333b4a2-c4c2-4632-984f-d10016be86d5]   
+F, [2019-11-11T17:35:37.574315 #1] FATAL -- : [6333b4a2-c4c2-4632-984f-d10016be86d5] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:35:37.575263 #1] FATAL -- : [6333b4a2-c4c2-4632-984f-d10016be86d5]     4:     <title>BenchBnb</title>
+[6333b4a2-c4c2-4632-984f-d10016be86d5]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[6333b4a2-c4c2-4632-984f-d10016be86d5]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[6333b4a2-c4c2-4632-984f-d10016be86d5]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[6333b4a2-c4c2-4632-984f-d10016be86d5]     8:     <%= csrf_meta_tags %>
+[6333b4a2-c4c2-4632-984f-d10016be86d5]     9:     <%= javascript_include_tag 'application' %>
+[6333b4a2-c4c2-4632-984f-d10016be86d5]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:35:37.576067 #1] FATAL -- : [6333b4a2-c4c2-4632-984f-d10016be86d5]   
+F, [2019-11-11T17:35:37.576810 #1] FATAL -- : [6333b4a2-c4c2-4632-984f-d10016be86d5] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:35:37.764297 #1]  INFO -- : [94da1750-ba4f-413e-b43d-725abfc5a50d] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:35:37 +0000
+F, [2019-11-11T17:35:37.766619 #1] FATAL -- : [94da1750-ba4f-413e-b43d-725abfc5a50d]   
+F, [2019-11-11T17:35:37.767601 #1] FATAL -- : [94da1750-ba4f-413e-b43d-725abfc5a50d] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:35:37.773420 #1] FATAL -- : [94da1750-ba4f-413e-b43d-725abfc5a50d]   
+F, [2019-11-11T17:35:37.774347 #1] FATAL -- : [94da1750-ba4f-413e-b43d-725abfc5a50d] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[94da1750-ba4f-413e-b43d-725abfc5a50d] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:35:38.814789 #1]  INFO -- : [da454014-c15e-4111-9320-a185c4bb77a0] Started GET "/" for 192.168.144.1 at 2019-11-11 17:35:38 +0000
+I, [2019-11-11T17:35:38.817164 #1]  INFO -- : [da454014-c15e-4111-9320-a185c4bb77a0] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:35:38.820068 #1]  INFO -- : [da454014-c15e-4111-9320-a185c4bb77a0]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:35:38.823251 #1]  INFO -- : [da454014-c15e-4111-9320-a185c4bb77a0]   Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+I, [2019-11-11T17:35:38.880091 #1]  INFO -- : [da454014-c15e-4111-9320-a185c4bb77a0] Completed 500 Internal Server Error in 62ms
+F, [2019-11-11T17:35:38.883051 #1] FATAL -- : [da454014-c15e-4111-9320-a185c4bb77a0]   
+F, [2019-11-11T17:35:38.884210 #1] FATAL -- : [da454014-c15e-4111-9320-a185c4bb77a0] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:35:38.885857 #1] FATAL -- : [da454014-c15e-4111-9320-a185c4bb77a0]     4:     <title>BenchBnb</title>
+[da454014-c15e-4111-9320-a185c4bb77a0]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[da454014-c15e-4111-9320-a185c4bb77a0]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[da454014-c15e-4111-9320-a185c4bb77a0]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[da454014-c15e-4111-9320-a185c4bb77a0]     8:     <%= csrf_meta_tags %>
+[da454014-c15e-4111-9320-a185c4bb77a0]     9:     <%= javascript_include_tag 'application' %>
+[da454014-c15e-4111-9320-a185c4bb77a0]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:35:38.886820 #1] FATAL -- : [da454014-c15e-4111-9320-a185c4bb77a0]   
+F, [2019-11-11T17:35:38.887830 #1] FATAL -- : [da454014-c15e-4111-9320-a185c4bb77a0] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:35:39.070968 #1]  INFO -- : [b9d6ecd6-a40e-4515-ac92-b24779e4916f] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:35:39 +0000
+F, [2019-11-11T17:35:39.073607 #1] FATAL -- : [b9d6ecd6-a40e-4515-ac92-b24779e4916f]   
+F, [2019-11-11T17:35:39.074539 #1] FATAL -- : [b9d6ecd6-a40e-4515-ac92-b24779e4916f] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:35:39.076520 #1] FATAL -- : [b9d6ecd6-a40e-4515-ac92-b24779e4916f]   
+F, [2019-11-11T17:35:39.077379 #1] FATAL -- : [b9d6ecd6-a40e-4515-ac92-b24779e4916f] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[b9d6ecd6-a40e-4515-ac92-b24779e4916f] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:35:40.803116 #1]  INFO -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c] Started GET "/" for 192.168.144.1 at 2019-11-11 17:35:40 +0000
+I, [2019-11-11T17:35:40.805923 #1]  INFO -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:35:40.808731 #1]  INFO -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:35:40.812881 #1]  INFO -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c]   Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+I, [2019-11-11T17:35:41.154706 #1]  INFO -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c] Completed 500 Internal Server Error in 347ms
+F, [2019-11-11T17:35:41.157018 #1] FATAL -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c]   
+F, [2019-11-11T17:35:41.158149 #1] FATAL -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:35:41.159389 #1] FATAL -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c]     4:     <title>BenchBnb</title>
+[b03c2fc9-e911-422d-9e16-62c0e12bff1c]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[b03c2fc9-e911-422d-9e16-62c0e12bff1c]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[b03c2fc9-e911-422d-9e16-62c0e12bff1c]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[b03c2fc9-e911-422d-9e16-62c0e12bff1c]     8:     <%= csrf_meta_tags %>
+[b03c2fc9-e911-422d-9e16-62c0e12bff1c]     9:     <%= javascript_include_tag 'application' %>
+[b03c2fc9-e911-422d-9e16-62c0e12bff1c]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:35:41.160296 #1] FATAL -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c]   
+F, [2019-11-11T17:35:41.161233 #1] FATAL -- : [b03c2fc9-e911-422d-9e16-62c0e12bff1c] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:35:41.359991 #1]  INFO -- : [76ee3e01-f90b-495a-a56f-967c3101dae3] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:35:41 +0000
+F, [2019-11-11T17:35:41.365601 #1] FATAL -- : [76ee3e01-f90b-495a-a56f-967c3101dae3]   
+F, [2019-11-11T17:35:41.366989 #1] FATAL -- : [76ee3e01-f90b-495a-a56f-967c3101dae3] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:35:41.368215 #1] FATAL -- : [76ee3e01-f90b-495a-a56f-967c3101dae3]   
+F, [2019-11-11T17:35:41.369872 #1] FATAL -- : [76ee3e01-f90b-495a-a56f-967c3101dae3] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[76ee3e01-f90b-495a-a56f-967c3101dae3] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:35:56.398464 #1]  INFO -- : [ff651bea-2b01-4fb7-b267-88ba27a07555] Started GET "/" for 192.168.144.1 at 2019-11-11 17:35:56 +0000
+I, [2019-11-11T17:35:56.401926 #1]  INFO -- : [ff651bea-2b01-4fb7-b267-88ba27a07555] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:35:56.404971 #1]  INFO -- : [ff651bea-2b01-4fb7-b267-88ba27a07555]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:35:56.409535 #1]  INFO -- : [ff651bea-2b01-4fb7-b267-88ba27a07555]   Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+I, [2019-11-11T17:35:56.455730 #1]  INFO -- : [ff651bea-2b01-4fb7-b267-88ba27a07555] Completed 500 Internal Server Error in 52ms
+F, [2019-11-11T17:35:56.458709 #1] FATAL -- : [ff651bea-2b01-4fb7-b267-88ba27a07555]   
+F, [2019-11-11T17:35:56.460324 #1] FATAL -- : [ff651bea-2b01-4fb7-b267-88ba27a07555] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:35:56.461406 #1] FATAL -- : [ff651bea-2b01-4fb7-b267-88ba27a07555]     4:     <title>BenchBnb</title>
+[ff651bea-2b01-4fb7-b267-88ba27a07555]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[ff651bea-2b01-4fb7-b267-88ba27a07555]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[ff651bea-2b01-4fb7-b267-88ba27a07555]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[ff651bea-2b01-4fb7-b267-88ba27a07555]     8:     <%= csrf_meta_tags %>
+[ff651bea-2b01-4fb7-b267-88ba27a07555]     9:     <%= javascript_include_tag 'application' %>
+[ff651bea-2b01-4fb7-b267-88ba27a07555]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:35:56.462401 #1] FATAL -- : [ff651bea-2b01-4fb7-b267-88ba27a07555]   
+F, [2019-11-11T17:35:56.463191 #1] FATAL -- : [ff651bea-2b01-4fb7-b267-88ba27a07555] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:36:18.708821 #1]  INFO -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1] Started GET "/" for 192.168.144.1 at 2019-11-11 17:36:18 +0000
+I, [2019-11-11T17:36:18.711212 #1]  INFO -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:36:18.713470 #1]  INFO -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:36:18.716958 #1]  INFO -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1]   Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+I, [2019-11-11T17:36:18.766965 #1]  INFO -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1] Completed 500 Internal Server Error in 54ms
+F, [2019-11-11T17:36:18.769304 #1] FATAL -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1]   
+F, [2019-11-11T17:36:18.770336 #1] FATAL -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:36:18.771297 #1] FATAL -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1]     4:     <title>BenchBnb</title>
+[41bf5600-9be3-4a56-bba3-a8a74823d2d1]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[41bf5600-9be3-4a56-bba3-a8a74823d2d1]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[41bf5600-9be3-4a56-bba3-a8a74823d2d1]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[41bf5600-9be3-4a56-bba3-a8a74823d2d1]     8:     <%= csrf_meta_tags %>
+[41bf5600-9be3-4a56-bba3-a8a74823d2d1]     9:     <%= javascript_include_tag 'application' %>
+[41bf5600-9be3-4a56-bba3-a8a74823d2d1]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:36:18.772128 #1] FATAL -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1]   
+F, [2019-11-11T17:36:18.773135 #1] FATAL -- : [41bf5600-9be3-4a56-bba3-a8a74823d2d1] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:36:19.695362 #1]  INFO -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4] Started GET "/" for 192.168.144.1 at 2019-11-11 17:36:19 +0000
+I, [2019-11-11T17:36:19.699604 #1]  INFO -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:36:19.702209 #1]  INFO -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:36:19.705864 #1]  INFO -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]   Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+I, [2019-11-11T17:36:19.740414 #1]  INFO -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4] Completed 500 Internal Server Error in 39ms
+F, [2019-11-11T17:36:19.741747 #1] FATAL -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]   
+F, [2019-11-11T17:36:19.742315 #1] FATAL -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:36:19.742867 #1] FATAL -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]     4:     <title>BenchBnb</title>
+[df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]     8:     <%= csrf_meta_tags %>
+[df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]     9:     <%= javascript_include_tag 'application' %>
+[df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:36:19.743328 #1] FATAL -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4]   
+F, [2019-11-11T17:36:19.743758 #1] FATAL -- : [df0d2e3c-8662-4f1c-88a0-8f8f58c729b4] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:36:19.913038 #1]  INFO -- : [4462dc6c-a7cf-425e-8c65-028d8df91c8e] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:36:19 +0000
+F, [2019-11-11T17:36:19.922317 #1] FATAL -- : [4462dc6c-a7cf-425e-8c65-028d8df91c8e]   
+F, [2019-11-11T17:36:19.923097 #1] FATAL -- : [4462dc6c-a7cf-425e-8c65-028d8df91c8e] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:36:19.923815 #1] FATAL -- : [4462dc6c-a7cf-425e-8c65-028d8df91c8e]   
+F, [2019-11-11T17:36:19.924422 #1] FATAL -- : [4462dc6c-a7cf-425e-8c65-028d8df91c8e] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[4462dc6c-a7cf-425e-8c65-028d8df91c8e] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:36:30.310685 #1]  INFO -- : [448f6d60-d17e-4e20-b5e4-42f286260339] Started GET "/" for 192.168.144.1 at 2019-11-11 17:36:30 +0000
+I, [2019-11-11T17:36:30.313998 #1]  INFO -- : [448f6d60-d17e-4e20-b5e4-42f286260339] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:36:30.318183 #1]  INFO -- : [448f6d60-d17e-4e20-b5e4-42f286260339]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:36:30.321890 #1]  INFO -- : [448f6d60-d17e-4e20-b5e4-42f286260339]   Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+I, [2019-11-11T17:36:30.365725 #1]  INFO -- : [448f6d60-d17e-4e20-b5e4-42f286260339] Completed 500 Internal Server Error in 49ms
+F, [2019-11-11T17:36:30.368330 #1] FATAL -- : [448f6d60-d17e-4e20-b5e4-42f286260339]   
+F, [2019-11-11T17:36:30.370022 #1] FATAL -- : [448f6d60-d17e-4e20-b5e4-42f286260339] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:36:30.371803 #1] FATAL -- : [448f6d60-d17e-4e20-b5e4-42f286260339]     4:     <title>BenchBnb</title>
+[448f6d60-d17e-4e20-b5e4-42f286260339]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[448f6d60-d17e-4e20-b5e4-42f286260339]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[448f6d60-d17e-4e20-b5e4-42f286260339]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[448f6d60-d17e-4e20-b5e4-42f286260339]     8:     <%= csrf_meta_tags %>
+[448f6d60-d17e-4e20-b5e4-42f286260339]     9:     <%= javascript_include_tag 'application' %>
+[448f6d60-d17e-4e20-b5e4-42f286260339]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:36:30.372645 #1] FATAL -- : [448f6d60-d17e-4e20-b5e4-42f286260339]   
+F, [2019-11-11T17:36:30.373766 #1] FATAL -- : [448f6d60-d17e-4e20-b5e4-42f286260339] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:36:31.251580 #1]  INFO -- : [7134a999-8429-413b-a86c-02b8b7b22250] Started GET "/" for 192.168.144.1 at 2019-11-11 17:36:31 +0000
+I, [2019-11-11T17:36:31.253531 #1]  INFO -- : [7134a999-8429-413b-a86c-02b8b7b22250] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:36:31.255378 #1]  INFO -- : [7134a999-8429-413b-a86c-02b8b7b22250]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:36:31.258311 #1]  INFO -- : [7134a999-8429-413b-a86c-02b8b7b22250]   Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+I, [2019-11-11T17:36:31.308976 #1]  INFO -- : [7134a999-8429-413b-a86c-02b8b7b22250] Completed 500 Internal Server Error in 54ms
+F, [2019-11-11T17:36:31.311892 #1] FATAL -- : [7134a999-8429-413b-a86c-02b8b7b22250]   
+F, [2019-11-11T17:36:31.313058 #1] FATAL -- : [7134a999-8429-413b-a86c-02b8b7b22250] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:36:31.314223 #1] FATAL -- : [7134a999-8429-413b-a86c-02b8b7b22250]     4:     <title>BenchBnb</title>
+[7134a999-8429-413b-a86c-02b8b7b22250]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[7134a999-8429-413b-a86c-02b8b7b22250]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[7134a999-8429-413b-a86c-02b8b7b22250]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[7134a999-8429-413b-a86c-02b8b7b22250]     8:     <%= csrf_meta_tags %>
+[7134a999-8429-413b-a86c-02b8b7b22250]     9:     <%= javascript_include_tag 'application' %>
+[7134a999-8429-413b-a86c-02b8b7b22250]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:36:31.315120 #1] FATAL -- : [7134a999-8429-413b-a86c-02b8b7b22250]   
+F, [2019-11-11T17:36:31.315898 #1] FATAL -- : [7134a999-8429-413b-a86c-02b8b7b22250] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:36:31.494851 #1]  INFO -- : [a783dca7-056d-4dc3-ad29-db1effcc92e2] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:36:31 +0000
+F, [2019-11-11T17:36:31.497614 #1] FATAL -- : [a783dca7-056d-4dc3-ad29-db1effcc92e2]   
+F, [2019-11-11T17:36:31.498379 #1] FATAL -- : [a783dca7-056d-4dc3-ad29-db1effcc92e2] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:36:31.499863 #1] FATAL -- : [a783dca7-056d-4dc3-ad29-db1effcc92e2]   
+F, [2019-11-11T17:36:31.501469 #1] FATAL -- : [a783dca7-056d-4dc3-ad29-db1effcc92e2] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[a783dca7-056d-4dc3-ad29-db1effcc92e2] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:36:35.514880 #1]  INFO -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c] Started GET "/" for 192.168.144.1 at 2019-11-11 17:36:35 +0000
+I, [2019-11-11T17:36:35.519415 #1]  INFO -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:36:35.529232 #1]  INFO -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:36:35.531410 #1]  INFO -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c]   Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+I, [2019-11-11T17:36:35.605507 #1]  INFO -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c] Completed 500 Internal Server Error in 79ms
+F, [2019-11-11T17:36:35.609883 #1] FATAL -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c]   
+F, [2019-11-11T17:36:35.611145 #1] FATAL -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:36:35.613251 #1] FATAL -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c]     4:     <title>BenchBnb</title>
+[fcd8d101-c7f4-4f69-82a4-6979e6334e1c]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[fcd8d101-c7f4-4f69-82a4-6979e6334e1c]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[fcd8d101-c7f4-4f69-82a4-6979e6334e1c]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[fcd8d101-c7f4-4f69-82a4-6979e6334e1c]     8:     <%= csrf_meta_tags %>
+[fcd8d101-c7f4-4f69-82a4-6979e6334e1c]     9:     <%= javascript_include_tag 'application' %>
+[fcd8d101-c7f4-4f69-82a4-6979e6334e1c]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:36:35.614115 #1] FATAL -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c]   
+F, [2019-11-11T17:36:35.615991 #1] FATAL -- : [fcd8d101-c7f4-4f69-82a4-6979e6334e1c] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:36:58.854506 #1]  INFO -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe] Started GET "/" for 192.168.144.1 at 2019-11-11 17:36:58 +0000
+I, [2019-11-11T17:36:58.859021 #1]  INFO -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:36:58.861639 #1]  INFO -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:36:58.863698 #1]  INFO -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe]   Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+I, [2019-11-11T17:36:58.905815 #1]  INFO -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe] Completed 500 Internal Server Error in 45ms
+F, [2019-11-11T17:36:58.907521 #1] FATAL -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe]   
+F, [2019-11-11T17:36:58.908319 #1] FATAL -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:36:58.909148 #1] FATAL -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe]     4:     <title>BenchBnb</title>
+[b272ffc5-a142-4a03-b623-d02a1f6c36fe]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[b272ffc5-a142-4a03-b623-d02a1f6c36fe]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[b272ffc5-a142-4a03-b623-d02a1f6c36fe]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[b272ffc5-a142-4a03-b623-d02a1f6c36fe]     8:     <%= csrf_meta_tags %>
+[b272ffc5-a142-4a03-b623-d02a1f6c36fe]     9:     <%= javascript_include_tag 'application' %>
+[b272ffc5-a142-4a03-b623-d02a1f6c36fe]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:36:58.909840 #1] FATAL -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe]   
+F, [2019-11-11T17:36:58.910626 #1] FATAL -- : [b272ffc5-a142-4a03-b623-d02a1f6c36fe] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:36:59.937091 #1]  INFO -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b] Started GET "/" for 192.168.144.1 at 2019-11-11 17:36:59 +0000
+I, [2019-11-11T17:36:59.941878 #1]  INFO -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:36:59.944402 #1]  INFO -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:36:59.946221 #1]  INFO -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b]   Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+I, [2019-11-11T17:36:59.977287 #1]  INFO -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b] Completed 500 Internal Server Error in 34ms
+F, [2019-11-11T17:36:59.978657 #1] FATAL -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b]   
+F, [2019-11-11T17:36:59.979135 #1] FATAL -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:36:59.979725 #1] FATAL -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b]     4:     <title>BenchBnb</title>
+[7e718c8e-4277-4f1a-9ca3-6d52574c248b]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[7e718c8e-4277-4f1a-9ca3-6d52574c248b]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[7e718c8e-4277-4f1a-9ca3-6d52574c248b]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[7e718c8e-4277-4f1a-9ca3-6d52574c248b]     8:     <%= csrf_meta_tags %>
+[7e718c8e-4277-4f1a-9ca3-6d52574c248b]     9:     <%= javascript_include_tag 'application' %>
+[7e718c8e-4277-4f1a-9ca3-6d52574c248b]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:36:59.980260 #1] FATAL -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b]   
+F, [2019-11-11T17:36:59.980730 #1] FATAL -- : [7e718c8e-4277-4f1a-9ca3-6d52574c248b] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:37:00.631872 #1]  INFO -- : [32c7a451-f241-4a03-951f-02d900fc9efa] Started GET "/" for 192.168.144.1 at 2019-11-11 17:37:00 +0000
+I, [2019-11-11T17:37:00.634869 #1]  INFO -- : [32c7a451-f241-4a03-951f-02d900fc9efa] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:37:00.638163 #1]  INFO -- : [32c7a451-f241-4a03-951f-02d900fc9efa]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:37:00.641037 #1]  INFO -- : [32c7a451-f241-4a03-951f-02d900fc9efa]   Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+I, [2019-11-11T17:37:00.671275 #1]  INFO -- : [32c7a451-f241-4a03-951f-02d900fc9efa] Completed 500 Internal Server Error in 34ms
+F, [2019-11-11T17:37:00.675043 #1] FATAL -- : [32c7a451-f241-4a03-951f-02d900fc9efa]   
+F, [2019-11-11T17:37:00.676312 #1] FATAL -- : [32c7a451-f241-4a03-951f-02d900fc9efa] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:37:00.676971 #1] FATAL -- : [32c7a451-f241-4a03-951f-02d900fc9efa]     4:     <title>BenchBnb</title>
+[32c7a451-f241-4a03-951f-02d900fc9efa]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[32c7a451-f241-4a03-951f-02d900fc9efa]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[32c7a451-f241-4a03-951f-02d900fc9efa]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[32c7a451-f241-4a03-951f-02d900fc9efa]     8:     <%= csrf_meta_tags %>
+[32c7a451-f241-4a03-951f-02d900fc9efa]     9:     <%= javascript_include_tag 'application' %>
+[32c7a451-f241-4a03-951f-02d900fc9efa]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:37:00.677525 #1] FATAL -- : [32c7a451-f241-4a03-951f-02d900fc9efa]   
+F, [2019-11-11T17:37:00.678005 #1] FATAL -- : [32c7a451-f241-4a03-951f-02d900fc9efa] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:37:00.854910 #1]  INFO -- : [091b6c72-96a8-4b4c-8b58-5a2956306080] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:37:00 +0000
+F, [2019-11-11T17:37:00.857266 #1] FATAL -- : [091b6c72-96a8-4b4c-8b58-5a2956306080]   
+F, [2019-11-11T17:37:00.861165 #1] FATAL -- : [091b6c72-96a8-4b4c-8b58-5a2956306080] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:37:00.862726 #1] FATAL -- : [091b6c72-96a8-4b4c-8b58-5a2956306080]   
+F, [2019-11-11T17:37:00.863318 #1] FATAL -- : [091b6c72-96a8-4b4c-8b58-5a2956306080] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[091b6c72-96a8-4b4c-8b58-5a2956306080] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:37:01.461238 #1]  INFO -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a] Started GET "/" for 192.168.144.1 at 2019-11-11 17:37:01 +0000
+I, [2019-11-11T17:37:01.468026 #1]  INFO -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:37:01.469814 #1]  INFO -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:37:01.471450 #1]  INFO -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a]   Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+I, [2019-11-11T17:37:01.509731 #1]  INFO -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a] Completed 500 Internal Server Error in 40ms
+F, [2019-11-11T17:37:01.513891 #1] FATAL -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a]   
+F, [2019-11-11T17:37:01.515077 #1] FATAL -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:37:01.516009 #1] FATAL -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a]     4:     <title>BenchBnb</title>
+[e14ed2ca-3bbb-4170-aae3-4d6e7453274a]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[e14ed2ca-3bbb-4170-aae3-4d6e7453274a]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[e14ed2ca-3bbb-4170-aae3-4d6e7453274a]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[e14ed2ca-3bbb-4170-aae3-4d6e7453274a]     8:     <%= csrf_meta_tags %>
+[e14ed2ca-3bbb-4170-aae3-4d6e7453274a]     9:     <%= javascript_include_tag 'application' %>
+[e14ed2ca-3bbb-4170-aae3-4d6e7453274a]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:37:01.516762 #1] FATAL -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a]   
+F, [2019-11-11T17:37:01.517811 #1] FATAL -- : [e14ed2ca-3bbb-4170-aae3-4d6e7453274a] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:37:01.720325 #1]  INFO -- : [4b49227b-b618-474f-8836-c217d25aede0] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:37:01 +0000
+F, [2019-11-11T17:37:01.722558 #1] FATAL -- : [4b49227b-b618-474f-8836-c217d25aede0]   
+F, [2019-11-11T17:37:01.725274 #1] FATAL -- : [4b49227b-b618-474f-8836-c217d25aede0] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:37:01.727651 #1] FATAL -- : [4b49227b-b618-474f-8836-c217d25aede0]   
+F, [2019-11-11T17:37:01.729498 #1] FATAL -- : [4b49227b-b618-474f-8836-c217d25aede0] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[4b49227b-b618-474f-8836-c217d25aede0] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[4b49227b-b618-474f-8836-c217d25aede0] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[4b49227b-b618-474f-8836-c217d25aede0] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[4b49227b-b618-474f-8836-c217d25aede0] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[4b49227b-b618-474f-8836-c217d25aede0] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[4b49227b-b618-474f-8836-c217d25aede0] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[4b49227b-b618-474f-8836-c217d25aede0] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[4b49227b-b618-474f-8836-c217d25aede0] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[4b49227b-b618-474f-8836-c217d25aede0] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:37:01.956021 #1]  INFO -- : [83787da6-724e-4865-9102-fcf47b004fc9] Started GET "/" for 192.168.144.1 at 2019-11-11 17:37:01 +0000
+I, [2019-11-11T17:37:01.973424 #1]  INFO -- : [83787da6-724e-4865-9102-fcf47b004fc9] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:37:01.990806 #1]  INFO -- : [83787da6-724e-4865-9102-fcf47b004fc9]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:37:01.991888 #1]  INFO -- : [83787da6-724e-4865-9102-fcf47b004fc9]   Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+I, [2019-11-11T17:37:02.017943 #1]  INFO -- : [83787da6-724e-4865-9102-fcf47b004fc9] Completed 500 Internal Server Error in 28ms
+F, [2019-11-11T17:37:02.019912 #1] FATAL -- : [83787da6-724e-4865-9102-fcf47b004fc9]   
+F, [2019-11-11T17:37:02.020825 #1] FATAL -- : [83787da6-724e-4865-9102-fcf47b004fc9] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:37:02.021828 #1] FATAL -- : [83787da6-724e-4865-9102-fcf47b004fc9]     4:     <title>BenchBnb</title>
+[83787da6-724e-4865-9102-fcf47b004fc9]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[83787da6-724e-4865-9102-fcf47b004fc9]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[83787da6-724e-4865-9102-fcf47b004fc9]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[83787da6-724e-4865-9102-fcf47b004fc9]     8:     <%= csrf_meta_tags %>
+[83787da6-724e-4865-9102-fcf47b004fc9]     9:     <%= javascript_include_tag 'application' %>
+[83787da6-724e-4865-9102-fcf47b004fc9]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:37:02.022616 #1] FATAL -- : [83787da6-724e-4865-9102-fcf47b004fc9]   
+F, [2019-11-11T17:37:02.024309 #1] FATAL -- : [83787da6-724e-4865-9102-fcf47b004fc9] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:37:02.073936 #1]  INFO -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128] Started GET "/" for 192.168.144.1 at 2019-11-11 17:37:02 +0000
+I, [2019-11-11T17:37:02.078982 #1]  INFO -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:37:02.082473 #1]  INFO -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:37:02.084087 #1]  INFO -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128]   Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+I, [2019-11-11T17:37:02.118860 #1]  INFO -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128] Completed 500 Internal Server Error in 38ms
+F, [2019-11-11T17:37:02.120799 #1] FATAL -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128]   
+F, [2019-11-11T17:37:02.121723 #1] FATAL -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:37:02.122507 #1] FATAL -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128]     4:     <title>BenchBnb</title>
+[bf2ee2bb-5e44-4a3e-ac09-9c546b126128]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[bf2ee2bb-5e44-4a3e-ac09-9c546b126128]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[bf2ee2bb-5e44-4a3e-ac09-9c546b126128]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[bf2ee2bb-5e44-4a3e-ac09-9c546b126128]     8:     <%= csrf_meta_tags %>
+[bf2ee2bb-5e44-4a3e-ac09-9c546b126128]     9:     <%= javascript_include_tag 'application' %>
+[bf2ee2bb-5e44-4a3e-ac09-9c546b126128]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:37:02.123134 #1] FATAL -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128]   
+F, [2019-11-11T17:37:02.123664 #1] FATAL -- : [bf2ee2bb-5e44-4a3e-ac09-9c546b126128] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:37:02.324798 #1]  INFO -- : [dd5baf0d-537b-42cc-8be6-26ac98fada25] Started GET "/favicon.ico" for 192.168.144.1 at 2019-11-11 17:37:02 +0000
+F, [2019-11-11T17:37:02.328652 #1] FATAL -- : [dd5baf0d-537b-42cc-8be6-26ac98fada25]   
+F, [2019-11-11T17:37:02.331793 #1] FATAL -- : [dd5baf0d-537b-42cc-8be6-26ac98fada25] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:37:02.332672 #1] FATAL -- : [dd5baf0d-537b-42cc-8be6-26ac98fada25]   
+F, [2019-11-11T17:37:02.333496 #1] FATAL -- : [dd5baf0d-537b-42cc-8be6-26ac98fada25] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[dd5baf0d-537b-42cc-8be6-26ac98fada25] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:37:46.078635 #1]  INFO -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba] Started GET "/" for 192.168.144.1 at 2019-11-11 17:37:46 +0000
+I, [2019-11-11T17:37:46.082032 #1]  INFO -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:37:46.089194 #1]  INFO -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:37:46.093628 #1]  INFO -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba]   Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+I, [2019-11-11T17:37:46.153385 #1]  INFO -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba] Completed 500 Internal Server Error in 65ms
+F, [2019-11-11T17:37:46.155159 #1] FATAL -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba]   
+F, [2019-11-11T17:37:46.156202 #1] FATAL -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:37:46.157108 #1] FATAL -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba]     4:     <title>BenchBnb</title>
+[15956eed-98b3-4cc1-bc62-dc893d8bb6ba]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[15956eed-98b3-4cc1-bc62-dc893d8bb6ba]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[15956eed-98b3-4cc1-bc62-dc893d8bb6ba]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[15956eed-98b3-4cc1-bc62-dc893d8bb6ba]     8:     <%= csrf_meta_tags %>
+[15956eed-98b3-4cc1-bc62-dc893d8bb6ba]     9:     <%= javascript_include_tag 'application' %>
+[15956eed-98b3-4cc1-bc62-dc893d8bb6ba]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:37:46.157949 #1] FATAL -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba]   
+F, [2019-11-11T17:37:46.158489 #1] FATAL -- : [15956eed-98b3-4cc1-bc62-dc893d8bb6ba] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1722181721402380371_47418848129800'
+I, [2019-11-11T17:42:06.235964 #1]  INFO -- : [464bfc37-2331-4315-8e7b-d33229bab4ba] Started GET "/" for 192.168.160.1 at 2019-11-11 17:42:06 +0000
+I, [2019-11-11T17:42:06.289756 #1]  INFO -- : [464bfc37-2331-4315-8e7b-d33229bab4ba] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:42:06.371477 #1]  INFO -- : [464bfc37-2331-4315-8e7b-d33229bab4ba]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:42:06.378872 #1]  INFO -- : [464bfc37-2331-4315-8e7b-d33229bab4ba]   Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+I, [2019-11-11T17:42:06.399734 #1]  INFO -- : [464bfc37-2331-4315-8e7b-d33229bab4ba] Completed 500 Internal Server Error in 109ms
+F, [2019-11-11T17:42:06.401002 #1] FATAL -- : [464bfc37-2331-4315-8e7b-d33229bab4ba]   
+F, [2019-11-11T17:42:06.401578 #1] FATAL -- : [464bfc37-2331-4315-8e7b-d33229bab4ba] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:42:06.402172 #1] FATAL -- : [464bfc37-2331-4315-8e7b-d33229bab4ba]     4:     <title>BenchBnb</title>
+[464bfc37-2331-4315-8e7b-d33229bab4ba]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[464bfc37-2331-4315-8e7b-d33229bab4ba]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[464bfc37-2331-4315-8e7b-d33229bab4ba]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[464bfc37-2331-4315-8e7b-d33229bab4ba]     8:     <%= csrf_meta_tags %>
+[464bfc37-2331-4315-8e7b-d33229bab4ba]     9:     <%= javascript_include_tag 'application' %>
+[464bfc37-2331-4315-8e7b-d33229bab4ba]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:42:06.402719 #1] FATAL -- : [464bfc37-2331-4315-8e7b-d33229bab4ba]   
+F, [2019-11-11T17:42:06.403153 #1] FATAL -- : [464bfc37-2331-4315-8e7b-d33229bab4ba] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4020076105523501518_47078946641820'
+I, [2019-11-11T17:42:11.211040 #1]  INFO -- : [2ac6729f-2fa0-4179-897b-671f26259eff] Started GET "/" for 192.168.160.1 at 2019-11-11 17:42:11 +0000
+I, [2019-11-11T17:42:11.212760 #1]  INFO -- : [2ac6729f-2fa0-4179-897b-671f26259eff] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:42:11.215535 #1]  INFO -- : [2ac6729f-2fa0-4179-897b-671f26259eff]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:42:11.217947 #1]  INFO -- : [2ac6729f-2fa0-4179-897b-671f26259eff]   Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+I, [2019-11-11T17:42:11.245463 #1]  INFO -- : [2ac6729f-2fa0-4179-897b-671f26259eff] Completed 500 Internal Server Error in 32ms
+F, [2019-11-11T17:42:11.246916 #1] FATAL -- : [2ac6729f-2fa0-4179-897b-671f26259eff]   
+F, [2019-11-11T17:42:11.247448 #1] FATAL -- : [2ac6729f-2fa0-4179-897b-671f26259eff] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:42:11.248034 #1] FATAL -- : [2ac6729f-2fa0-4179-897b-671f26259eff]     4:     <title>BenchBnb</title>
+[2ac6729f-2fa0-4179-897b-671f26259eff]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[2ac6729f-2fa0-4179-897b-671f26259eff]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[2ac6729f-2fa0-4179-897b-671f26259eff]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[2ac6729f-2fa0-4179-897b-671f26259eff]     8:     <%= csrf_meta_tags %>
+[2ac6729f-2fa0-4179-897b-671f26259eff]     9:     <%= javascript_include_tag 'application' %>
+[2ac6729f-2fa0-4179-897b-671f26259eff]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:42:11.248530 #1] FATAL -- : [2ac6729f-2fa0-4179-897b-671f26259eff]   
+F, [2019-11-11T17:42:11.248967 #1] FATAL -- : [2ac6729f-2fa0-4179-897b-671f26259eff] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4020076105523501518_47078946641820'
+I, [2019-11-11T17:42:11.391399 #1]  INFO -- : [689f2568-2747-4a4d-958c-66e882738f31] Started GET "/favicon.ico" for 192.168.160.1 at 2019-11-11 17:42:11 +0000
+F, [2019-11-11T17:42:11.393772 #1] FATAL -- : [689f2568-2747-4a4d-958c-66e882738f31]   
+F, [2019-11-11T17:42:11.395015 #1] FATAL -- : [689f2568-2747-4a4d-958c-66e882738f31] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:42:11.395942 #1] FATAL -- : [689f2568-2747-4a4d-958c-66e882738f31]   
+F, [2019-11-11T17:42:11.396596 #1] FATAL -- : [689f2568-2747-4a4d-958c-66e882738f31] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[689f2568-2747-4a4d-958c-66e882738f31] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[689f2568-2747-4a4d-958c-66e882738f31] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[689f2568-2747-4a4d-958c-66e882738f31] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[689f2568-2747-4a4d-958c-66e882738f31] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[689f2568-2747-4a4d-958c-66e882738f31] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[689f2568-2747-4a4d-958c-66e882738f31] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[689f2568-2747-4a4d-958c-66e882738f31] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[689f2568-2747-4a4d-958c-66e882738f31] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[689f2568-2747-4a4d-958c-66e882738f31] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:42:12.043205 #1]  INFO -- : [8b19386e-f191-477e-9a88-70c6899ba13d] Started GET "/" for 192.168.160.1 at 2019-11-11 17:42:12 +0000
+I, [2019-11-11T17:42:12.044925 #1]  INFO -- : [8b19386e-f191-477e-9a88-70c6899ba13d] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:42:12.047648 #1]  INFO -- : [8b19386e-f191-477e-9a88-70c6899ba13d]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:42:12.049943 #1]  INFO -- : [8b19386e-f191-477e-9a88-70c6899ba13d]   Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+I, [2019-11-11T17:42:12.076362 #1]  INFO -- : [8b19386e-f191-477e-9a88-70c6899ba13d] Completed 500 Internal Server Error in 30ms
+F, [2019-11-11T17:42:12.078072 #1] FATAL -- : [8b19386e-f191-477e-9a88-70c6899ba13d]   
+F, [2019-11-11T17:42:12.079119 #1] FATAL -- : [8b19386e-f191-477e-9a88-70c6899ba13d] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:42:12.080330 #1] FATAL -- : [8b19386e-f191-477e-9a88-70c6899ba13d]     4:     <title>BenchBnb</title>
+[8b19386e-f191-477e-9a88-70c6899ba13d]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[8b19386e-f191-477e-9a88-70c6899ba13d]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[8b19386e-f191-477e-9a88-70c6899ba13d]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[8b19386e-f191-477e-9a88-70c6899ba13d]     8:     <%= csrf_meta_tags %>
+[8b19386e-f191-477e-9a88-70c6899ba13d]     9:     <%= javascript_include_tag 'application' %>
+[8b19386e-f191-477e-9a88-70c6899ba13d]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:42:12.080867 #1] FATAL -- : [8b19386e-f191-477e-9a88-70c6899ba13d]   
+F, [2019-11-11T17:42:12.081311 #1] FATAL -- : [8b19386e-f191-477e-9a88-70c6899ba13d] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4020076105523501518_47078946641820'
+I, [2019-11-11T17:42:12.202116 #1]  INFO -- : [91b222c8-3f71-4a66-a36a-84061e6dc605] Started GET "/favicon.ico" for 192.168.160.1 at 2019-11-11 17:42:12 +0000
+F, [2019-11-11T17:42:12.203634 #1] FATAL -- : [91b222c8-3f71-4a66-a36a-84061e6dc605]   
+F, [2019-11-11T17:42:12.204140 #1] FATAL -- : [91b222c8-3f71-4a66-a36a-84061e6dc605] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T17:42:12.204607 #1] FATAL -- : [91b222c8-3f71-4a66-a36a-84061e6dc605]   
+F, [2019-11-11T17:42:12.205199 #1] FATAL -- : [91b222c8-3f71-4a66-a36a-84061e6dc605] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[91b222c8-3f71-4a66-a36a-84061e6dc605] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T17:42:17.802761 #1]  INFO -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a] Started GET "/" for 192.168.160.1 at 2019-11-11 17:42:17 +0000
+I, [2019-11-11T17:42:17.809933 #1]  INFO -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:42:17.813698 #1]  INFO -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:42:17.816032 #1]  INFO -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a]   Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+I, [2019-11-11T17:42:17.849785 #1]  INFO -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a] Completed 500 Internal Server Error in 37ms
+F, [2019-11-11T17:42:17.852539 #1] FATAL -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a]   
+F, [2019-11-11T17:42:17.853277 #1] FATAL -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:42:17.854032 #1] FATAL -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a]     4:     <title>BenchBnb</title>
+[cfcfd11e-606d-4efd-b3a5-e0601eb0899a]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[cfcfd11e-606d-4efd-b3a5-e0601eb0899a]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[cfcfd11e-606d-4efd-b3a5-e0601eb0899a]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[cfcfd11e-606d-4efd-b3a5-e0601eb0899a]     8:     <%= csrf_meta_tags %>
+[cfcfd11e-606d-4efd-b3a5-e0601eb0899a]     9:     <%= javascript_include_tag 'application' %>
+[cfcfd11e-606d-4efd-b3a5-e0601eb0899a]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:42:17.854790 #1] FATAL -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a]   
+F, [2019-11-11T17:42:17.855442 #1] FATAL -- : [cfcfd11e-606d-4efd-b3a5-e0601eb0899a] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4020076105523501518_47078946641820'
+I, [2019-11-11T17:42:21.655658 #1]  INFO -- : [07f022f9-7094-46c1-a931-189845b6777d] Started GET "/" for 192.168.160.1 at 2019-11-11 17:42:21 +0000
+I, [2019-11-11T17:42:21.659370 #1]  INFO -- : [07f022f9-7094-46c1-a931-189845b6777d] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T17:42:21.660849 #1]  INFO -- : [07f022f9-7094-46c1-a931-189845b6777d]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T17:42:21.661700 #1]  INFO -- : [07f022f9-7094-46c1-a931-189845b6777d]   Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+I, [2019-11-11T17:42:21.690916 #1]  INFO -- : [07f022f9-7094-46c1-a931-189845b6777d] Completed 500 Internal Server Error in 31ms
+F, [2019-11-11T17:42:21.692607 #1] FATAL -- : [07f022f9-7094-46c1-a931-189845b6777d]   
+F, [2019-11-11T17:42:21.693152 #1] FATAL -- : [07f022f9-7094-46c1-a931-189845b6777d] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T17:42:21.693708 #1] FATAL -- : [07f022f9-7094-46c1-a931-189845b6777d]     4:     <title>BenchBnb</title>
+[07f022f9-7094-46c1-a931-189845b6777d]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[07f022f9-7094-46c1-a931-189845b6777d]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[07f022f9-7094-46c1-a931-189845b6777d]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[07f022f9-7094-46c1-a931-189845b6777d]     8:     <%= csrf_meta_tags %>
+[07f022f9-7094-46c1-a931-189845b6777d]     9:     <%= javascript_include_tag 'application' %>
+[07f022f9-7094-46c1-a931-189845b6777d]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T17:42:21.694175 #1] FATAL -- : [07f022f9-7094-46c1-a931-189845b6777d]   
+F, [2019-11-11T17:42:21.694613 #1] FATAL -- : [07f022f9-7094-46c1-a931-189845b6777d] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4020076105523501518_47078946641820'
+I, [2019-11-11T09:42:51.245044 #32060]  INFO -- : [169d0949-630d-452a-9f6a-a32de608c02d] Started GET "/" for 127.0.0.1 at 2019-11-11 09:42:51 -0800
+I, [2019-11-11T09:42:51.260658 #32060]  INFO -- : [169d0949-630d-452a-9f6a-a32de608c02d] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:42:51.276872 #32060]  INFO -- : [169d0949-630d-452a-9f6a-a32de608c02d]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:42:51.284857 #32060]  INFO -- : [169d0949-630d-452a-9f6a-a32de608c02d]   Rendered static_pages/root.html.erb within layouts/application (7.8ms)
+I, [2019-11-11T09:42:51.288233 #32060]  INFO -- : [169d0949-630d-452a-9f6a-a32de608c02d] Completed 500 Internal Server Error in 27ms
+F, [2019-11-11T09:42:51.289453 #32060] FATAL -- : [169d0949-630d-452a-9f6a-a32de608c02d]   
+F, [2019-11-11T09:42:51.289641 #32060] FATAL -- : [169d0949-630d-452a-9f6a-a32de608c02d] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:42:51.290051 #32060] FATAL -- : [169d0949-630d-452a-9f6a-a32de608c02d]     4:     <title>BenchBnb</title>
+[169d0949-630d-452a-9f6a-a32de608c02d]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[169d0949-630d-452a-9f6a-a32de608c02d]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[169d0949-630d-452a-9f6a-a32de608c02d]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[169d0949-630d-452a-9f6a-a32de608c02d]     8:     <%= csrf_meta_tags %>
+[169d0949-630d-452a-9f6a-a32de608c02d]     9:     <%= javascript_include_tag 'application' %>
+[169d0949-630d-452a-9f6a-a32de608c02d]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:42:51.290149 #32060] FATAL -- : [169d0949-630d-452a-9f6a-a32de608c02d]   
+F, [2019-11-11T09:42:51.290249 #32060] FATAL -- : [169d0949-630d-452a-9f6a-a32de608c02d] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:42:52.185259 #32060]  INFO -- : [4fec3165-b7a1-4f21-a213-490b767eb747] Started GET "/" for 127.0.0.1 at 2019-11-11 09:42:52 -0800
+I, [2019-11-11T09:42:52.186473 #32060]  INFO -- : [4fec3165-b7a1-4f21-a213-490b767eb747] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:42:52.187898 #32060]  INFO -- : [4fec3165-b7a1-4f21-a213-490b767eb747]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:42:52.188318 #32060]  INFO -- : [4fec3165-b7a1-4f21-a213-490b767eb747]   Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+I, [2019-11-11T09:42:52.192258 #32060]  INFO -- : [4fec3165-b7a1-4f21-a213-490b767eb747] Completed 500 Internal Server Error in 5ms
+F, [2019-11-11T09:42:52.193684 #32060] FATAL -- : [4fec3165-b7a1-4f21-a213-490b767eb747]   
+F, [2019-11-11T09:42:52.193814 #32060] FATAL -- : [4fec3165-b7a1-4f21-a213-490b767eb747] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:42:52.193990 #32060] FATAL -- : [4fec3165-b7a1-4f21-a213-490b767eb747]     4:     <title>BenchBnb</title>
+[4fec3165-b7a1-4f21-a213-490b767eb747]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[4fec3165-b7a1-4f21-a213-490b767eb747]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[4fec3165-b7a1-4f21-a213-490b767eb747]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[4fec3165-b7a1-4f21-a213-490b767eb747]     8:     <%= csrf_meta_tags %>
+[4fec3165-b7a1-4f21-a213-490b767eb747]     9:     <%= javascript_include_tag 'application' %>
+[4fec3165-b7a1-4f21-a213-490b767eb747]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:42:52.194030 #32060] FATAL -- : [4fec3165-b7a1-4f21-a213-490b767eb747]   
+F, [2019-11-11T09:42:52.194085 #32060] FATAL -- : [4fec3165-b7a1-4f21-a213-490b767eb747] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:42:52.851251 #32060]  INFO -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f] Started GET "/" for 127.0.0.1 at 2019-11-11 09:42:52 -0800
+I, [2019-11-11T09:42:52.852071 #32060]  INFO -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:42:52.852861 #32060]  INFO -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:42:52.853300 #32060]  INFO -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]   Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+I, [2019-11-11T09:42:52.858137 #32060]  INFO -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f] Completed 500 Internal Server Error in 6ms
+F, [2019-11-11T09:42:52.859060 #32060] FATAL -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]   
+F, [2019-11-11T09:42:52.859125 #32060] FATAL -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:42:52.859283 #32060] FATAL -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]     4:     <title>BenchBnb</title>
+[7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]     8:     <%= csrf_meta_tags %>
+[7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]     9:     <%= javascript_include_tag 'application' %>
+[7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:42:52.859319 #32060] FATAL -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f]   
+F, [2019-11-11T09:42:52.859360 #32060] FATAL -- : [7aedc3dd-6e0b-42dd-a29f-d9fbfd81375f] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:42:54.842315 #32060]  INFO -- : [f20fea94-d01e-4769-a1ae-914d1040b89f] Started GET "/" for 127.0.0.1 at 2019-11-11 09:42:54 -0800
+I, [2019-11-11T09:42:54.843088 #32060]  INFO -- : [f20fea94-d01e-4769-a1ae-914d1040b89f] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:42:54.843881 #32060]  INFO -- : [f20fea94-d01e-4769-a1ae-914d1040b89f]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:42:54.844217 #32060]  INFO -- : [f20fea94-d01e-4769-a1ae-914d1040b89f]   Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+I, [2019-11-11T09:42:54.848660 #32060]  INFO -- : [f20fea94-d01e-4769-a1ae-914d1040b89f] Completed 500 Internal Server Error in 5ms
+F, [2019-11-11T09:42:54.853556 #32060] FATAL -- : [f20fea94-d01e-4769-a1ae-914d1040b89f]   
+F, [2019-11-11T09:42:54.853650 #32060] FATAL -- : [f20fea94-d01e-4769-a1ae-914d1040b89f] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:42:54.853803 #32060] FATAL -- : [f20fea94-d01e-4769-a1ae-914d1040b89f]     4:     <title>BenchBnb</title>
+[f20fea94-d01e-4769-a1ae-914d1040b89f]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[f20fea94-d01e-4769-a1ae-914d1040b89f]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[f20fea94-d01e-4769-a1ae-914d1040b89f]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[f20fea94-d01e-4769-a1ae-914d1040b89f]     8:     <%= csrf_meta_tags %>
+[f20fea94-d01e-4769-a1ae-914d1040b89f]     9:     <%= javascript_include_tag 'application' %>
+[f20fea94-d01e-4769-a1ae-914d1040b89f]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:42:54.853837 #32060] FATAL -- : [f20fea94-d01e-4769-a1ae-914d1040b89f]   
+F, [2019-11-11T09:42:54.853867 #32060] FATAL -- : [f20fea94-d01e-4769-a1ae-914d1040b89f] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:43:01.143644 #32060]  INFO -- : [d03c78fb-d362-425c-8bcd-7134668bddbd] Started GET "/" for 127.0.0.1 at 2019-11-11 09:43:01 -0800
+I, [2019-11-11T09:43:01.146991 #32060]  INFO -- : [d03c78fb-d362-425c-8bcd-7134668bddbd] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:43:01.148494 #32060]  INFO -- : [d03c78fb-d362-425c-8bcd-7134668bddbd]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:43:01.149823 #32060]  INFO -- : [d03c78fb-d362-425c-8bcd-7134668bddbd]   Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+I, [2019-11-11T09:43:01.155092 #32060]  INFO -- : [d03c78fb-d362-425c-8bcd-7134668bddbd] Completed 500 Internal Server Error in 8ms
+F, [2019-11-11T09:43:01.157870 #32060] FATAL -- : [d03c78fb-d362-425c-8bcd-7134668bddbd]   
+F, [2019-11-11T09:43:01.158009 #32060] FATAL -- : [d03c78fb-d362-425c-8bcd-7134668bddbd] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:43:01.158197 #32060] FATAL -- : [d03c78fb-d362-425c-8bcd-7134668bddbd]     4:     <title>BenchBnb</title>
+[d03c78fb-d362-425c-8bcd-7134668bddbd]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[d03c78fb-d362-425c-8bcd-7134668bddbd]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[d03c78fb-d362-425c-8bcd-7134668bddbd]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[d03c78fb-d362-425c-8bcd-7134668bddbd]     8:     <%= csrf_meta_tags %>
+[d03c78fb-d362-425c-8bcd-7134668bddbd]     9:     <%= javascript_include_tag 'application' %>
+[d03c78fb-d362-425c-8bcd-7134668bddbd]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:43:01.158259 #32060] FATAL -- : [d03c78fb-d362-425c-8bcd-7134668bddbd]   
+F, [2019-11-11T09:43:01.158392 #32060] FATAL -- : [d03c78fb-d362-425c-8bcd-7134668bddbd] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:43:14.373336 #32060]  INFO -- : [d672bbf8-8870-473c-ba61-f62c5c603765] Started GET "/" for 127.0.0.1 at 2019-11-11 09:43:14 -0800
+I, [2019-11-11T09:43:14.374449 #32060]  INFO -- : [d672bbf8-8870-473c-ba61-f62c5c603765] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:43:14.375321 #32060]  INFO -- : [d672bbf8-8870-473c-ba61-f62c5c603765]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:43:14.376383 #32060]  INFO -- : [d672bbf8-8870-473c-ba61-f62c5c603765]   Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+I, [2019-11-11T09:43:14.380873 #32060]  INFO -- : [d672bbf8-8870-473c-ba61-f62c5c603765] Completed 500 Internal Server Error in 6ms
+F, [2019-11-11T09:43:14.382430 #32060] FATAL -- : [d672bbf8-8870-473c-ba61-f62c5c603765]   
+F, [2019-11-11T09:43:14.382665 #32060] FATAL -- : [d672bbf8-8870-473c-ba61-f62c5c603765] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:43:14.383053 #32060] FATAL -- : [d672bbf8-8870-473c-ba61-f62c5c603765]     4:     <title>BenchBnb</title>
+[d672bbf8-8870-473c-ba61-f62c5c603765]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[d672bbf8-8870-473c-ba61-f62c5c603765]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[d672bbf8-8870-473c-ba61-f62c5c603765]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[d672bbf8-8870-473c-ba61-f62c5c603765]     8:     <%= csrf_meta_tags %>
+[d672bbf8-8870-473c-ba61-f62c5c603765]     9:     <%= javascript_include_tag 'application' %>
+[d672bbf8-8870-473c-ba61-f62c5c603765]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:43:14.383183 #32060] FATAL -- : [d672bbf8-8870-473c-ba61-f62c5c603765]   
+F, [2019-11-11T09:43:14.383313 #32060] FATAL -- : [d672bbf8-8870-473c-ba61-f62c5c603765] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:43:15.292373 #32060]  INFO -- : [b1fbddc6-09b6-4941-a806-b87597068974] Started GET "/" for 127.0.0.1 at 2019-11-11 09:43:15 -0800
+I, [2019-11-11T09:43:15.292956 #32060]  INFO -- : [b1fbddc6-09b6-4941-a806-b87597068974] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:43:15.293500 #32060]  INFO -- : [b1fbddc6-09b6-4941-a806-b87597068974]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:43:15.295031 #32060]  INFO -- : [b1fbddc6-09b6-4941-a806-b87597068974]   Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+I, [2019-11-11T09:43:15.299565 #32060]  INFO -- : [b1fbddc6-09b6-4941-a806-b87597068974] Completed 500 Internal Server Error in 6ms
+F, [2019-11-11T09:43:15.300636 #32060] FATAL -- : [b1fbddc6-09b6-4941-a806-b87597068974]   
+F, [2019-11-11T09:43:15.300789 #32060] FATAL -- : [b1fbddc6-09b6-4941-a806-b87597068974] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:43:15.300981 #32060] FATAL -- : [b1fbddc6-09b6-4941-a806-b87597068974]     4:     <title>BenchBnb</title>
+[b1fbddc6-09b6-4941-a806-b87597068974]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[b1fbddc6-09b6-4941-a806-b87597068974]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[b1fbddc6-09b6-4941-a806-b87597068974]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[b1fbddc6-09b6-4941-a806-b87597068974]     8:     <%= csrf_meta_tags %>
+[b1fbddc6-09b6-4941-a806-b87597068974]     9:     <%= javascript_include_tag 'application' %>
+[b1fbddc6-09b6-4941-a806-b87597068974]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:43:15.301046 #32060] FATAL -- : [b1fbddc6-09b6-4941-a806-b87597068974]   
+F, [2019-11-11T09:43:15.301101 #32060] FATAL -- : [b1fbddc6-09b6-4941-a806-b87597068974] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:43:16.332223 #32060]  INFO -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b] Started GET "/" for 127.0.0.1 at 2019-11-11 09:43:16 -0800
+I, [2019-11-11T09:43:16.333071 #32060]  INFO -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:43:16.333740 #32060]  INFO -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:43:16.334467 #32060]  INFO -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b]   Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+I, [2019-11-11T09:43:16.336793 #32060]  INFO -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b] Completed 500 Internal Server Error in 4ms
+F, [2019-11-11T09:43:16.337489 #32060] FATAL -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b]   
+F, [2019-11-11T09:43:16.337664 #32060] FATAL -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:43:16.337775 #32060] FATAL -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b]     4:     <title>BenchBnb</title>
+[c468a348-f0d2-4ef7-b6e0-0ae715299e9b]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[c468a348-f0d2-4ef7-b6e0-0ae715299e9b]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[c468a348-f0d2-4ef7-b6e0-0ae715299e9b]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[c468a348-f0d2-4ef7-b6e0-0ae715299e9b]     8:     <%= csrf_meta_tags %>
+[c468a348-f0d2-4ef7-b6e0-0ae715299e9b]     9:     <%= javascript_include_tag 'application' %>
+[c468a348-f0d2-4ef7-b6e0-0ae715299e9b]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:43:16.337807 #32060] FATAL -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b]   
+F, [2019-11-11T09:43:16.337837 #32060] FATAL -- : [c468a348-f0d2-4ef7-b6e0-0ae715299e9b] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:43:16.502735 #32060]  INFO -- : [13247ee9-764c-4e44-a152-d9284a888692] Started GET "/favicon.ico" for 127.0.0.1 at 2019-11-11 09:43:16 -0800
+F, [2019-11-11T09:43:16.503636 #32060] FATAL -- : [13247ee9-764c-4e44-a152-d9284a888692]   
+F, [2019-11-11T09:43:16.503720 #32060] FATAL -- : [13247ee9-764c-4e44-a152-d9284a888692] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T09:43:16.503765 #32060] FATAL -- : [13247ee9-764c-4e44-a152-d9284a888692]   
+F, [2019-11-11T09:43:16.503808 #32060] FATAL -- : [13247ee9-764c-4e44-a152-d9284a888692] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[13247ee9-764c-4e44-a152-d9284a888692] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[13247ee9-764c-4e44-a152-d9284a888692] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[13247ee9-764c-4e44-a152-d9284a888692] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[13247ee9-764c-4e44-a152-d9284a888692] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[13247ee9-764c-4e44-a152-d9284a888692] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[13247ee9-764c-4e44-a152-d9284a888692] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[13247ee9-764c-4e44-a152-d9284a888692] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[13247ee9-764c-4e44-a152-d9284a888692] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[13247ee9-764c-4e44-a152-d9284a888692] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T09:43:17.084468 #32060]  INFO -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04] Started GET "/" for 127.0.0.1 at 2019-11-11 09:43:17 -0800
+I, [2019-11-11T09:43:17.085278 #32060]  INFO -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:43:17.085800 #32060]  INFO -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:43:17.086492 #32060]  INFO -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]   Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+I, [2019-11-11T09:43:17.089448 #32060]  INFO -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04] Completed 500 Internal Server Error in 4ms
+F, [2019-11-11T09:43:17.090247 #32060] FATAL -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]   
+F, [2019-11-11T09:43:17.090321 #32060] FATAL -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:43:17.090447 #32060] FATAL -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]     4:     <title>BenchBnb</title>
+[9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]     8:     <%= csrf_meta_tags %>
+[9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]     9:     <%= javascript_include_tag 'application' %>
+[9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:43:17.090482 #32060] FATAL -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04]   
+F, [2019-11-11T09:43:17.090517 #32060] FATAL -- : [9baab2b5-ab6b-4c21-b7f4-6d3a95274a04] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:43:17.261367 #32060]  INFO -- : [b14a65bd-bb77-4882-b0a6-3dbb9079ea13] Started GET "/favicon.ico" for 127.0.0.1 at 2019-11-11 09:43:17 -0800
+F, [2019-11-11T09:43:17.262344 #32060] FATAL -- : [b14a65bd-bb77-4882-b0a6-3dbb9079ea13]   
+F, [2019-11-11T09:43:17.262451 #32060] FATAL -- : [b14a65bd-bb77-4882-b0a6-3dbb9079ea13] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T09:43:17.262505 #32060] FATAL -- : [b14a65bd-bb77-4882-b0a6-3dbb9079ea13]   
+F, [2019-11-11T09:43:17.262585 #32060] FATAL -- : [b14a65bd-bb77-4882-b0a6-3dbb9079ea13] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[b14a65bd-bb77-4882-b0a6-3dbb9079ea13] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T09:43:18.082443 #32060]  INFO -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a] Started GET "/" for 127.0.0.1 at 2019-11-11 09:43:18 -0800
+I, [2019-11-11T09:43:18.083631 #32060]  INFO -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:43:18.084140 #32060]  INFO -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:43:18.084762 #32060]  INFO -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a]   Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+I, [2019-11-11T09:43:18.088971 #32060]  INFO -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a] Completed 500 Internal Server Error in 5ms
+F, [2019-11-11T09:43:18.090081 #32060] FATAL -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a]   
+F, [2019-11-11T09:43:18.090178 #32060] FATAL -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:43:18.090322 #32060] FATAL -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a]     4:     <title>BenchBnb</title>
+[0c51dede-587c-4ce2-9f97-c7caf87b3b6a]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[0c51dede-587c-4ce2-9f97-c7caf87b3b6a]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[0c51dede-587c-4ce2-9f97-c7caf87b3b6a]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[0c51dede-587c-4ce2-9f97-c7caf87b3b6a]     8:     <%= csrf_meta_tags %>
+[0c51dede-587c-4ce2-9f97-c7caf87b3b6a]     9:     <%= javascript_include_tag 'application' %>
+[0c51dede-587c-4ce2-9f97-c7caf87b3b6a]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:43:18.090363 #32060] FATAL -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a]   
+F, [2019-11-11T09:43:18.090399 #32060] FATAL -- : [0c51dede-587c-4ce2-9f97-c7caf87b3b6a] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:43:18.273711 #32060]  INFO -- : [6dbd408e-39ca-4168-9885-31c6b05ae0b4] Started GET "/favicon.ico" for 127.0.0.1 at 2019-11-11 09:43:18 -0800
+F, [2019-11-11T09:43:18.275161 #32060] FATAL -- : [6dbd408e-39ca-4168-9885-31c6b05ae0b4]   
+F, [2019-11-11T09:43:18.275359 #32060] FATAL -- : [6dbd408e-39ca-4168-9885-31c6b05ae0b4] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T09:43:18.275491 #32060] FATAL -- : [6dbd408e-39ca-4168-9885-31c6b05ae0b4]   
+F, [2019-11-11T09:43:18.275561 #32060] FATAL -- : [6dbd408e-39ca-4168-9885-31c6b05ae0b4] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[6dbd408e-39ca-4168-9885-31c6b05ae0b4] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T09:43:26.952204 #32060]  INFO -- : [40be0631-273d-43fe-8373-7ca51888f619] Started GET "/" for 127.0.0.1 at 2019-11-11 09:43:26 -0800
+I, [2019-11-11T09:43:26.953117 #32060]  INFO -- : [40be0631-273d-43fe-8373-7ca51888f619] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:43:26.954057 #32060]  INFO -- : [40be0631-273d-43fe-8373-7ca51888f619]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:43:26.955110 #32060]  INFO -- : [40be0631-273d-43fe-8373-7ca51888f619]   Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+I, [2019-11-11T09:43:26.958922 #32060]  INFO -- : [40be0631-273d-43fe-8373-7ca51888f619] Completed 500 Internal Server Error in 6ms
+F, [2019-11-11T09:43:26.960004 #32060] FATAL -- : [40be0631-273d-43fe-8373-7ca51888f619]   
+F, [2019-11-11T09:43:26.960094 #32060] FATAL -- : [40be0631-273d-43fe-8373-7ca51888f619] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:43:26.960216 #32060] FATAL -- : [40be0631-273d-43fe-8373-7ca51888f619]     4:     <title>BenchBnb</title>
+[40be0631-273d-43fe-8373-7ca51888f619]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[40be0631-273d-43fe-8373-7ca51888f619]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[40be0631-273d-43fe-8373-7ca51888f619]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[40be0631-273d-43fe-8373-7ca51888f619]     8:     <%= csrf_meta_tags %>
+[40be0631-273d-43fe-8373-7ca51888f619]     9:     <%= javascript_include_tag 'application' %>
+[40be0631-273d-43fe-8373-7ca51888f619]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:43:26.960253 #32060] FATAL -- : [40be0631-273d-43fe-8373-7ca51888f619]   
+F, [2019-11-11T09:43:26.960284 #32060] FATAL -- : [40be0631-273d-43fe-8373-7ca51888f619] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__459691857038048413_70228622793080'
+I, [2019-11-11T09:44:16.959536 #32145]  INFO -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de] Started GET "/" for 127.0.0.1 at 2019-11-11 09:44:16 -0800
+I, [2019-11-11T09:44:16.978073 #32145]  INFO -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:44:16.998454 #32145]  INFO -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:44:17.012571 #32145]  INFO -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de]   Rendered static_pages/root.html.erb within layouts/application (13.8ms)
+I, [2019-11-11T09:44:17.018626 #32145]  INFO -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de] Completed 500 Internal Server Error in 40ms
+F, [2019-11-11T09:44:17.020360 #32145] FATAL -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de]   
+F, [2019-11-11T09:44:17.020774 #32145] FATAL -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:44:17.021103 #32145] FATAL -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de]     4:     <title>BenchBnb</title>
+[b6fe8f04-d515-4a09-888e-fdf8e7ff43de]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[b6fe8f04-d515-4a09-888e-fdf8e7ff43de]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[b6fe8f04-d515-4a09-888e-fdf8e7ff43de]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[b6fe8f04-d515-4a09-888e-fdf8e7ff43de]     8:     <%= csrf_meta_tags %>
+[b6fe8f04-d515-4a09-888e-fdf8e7ff43de]     9:     <%= javascript_include_tag 'application' %>
+[b6fe8f04-d515-4a09-888e-fdf8e7ff43de]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:44:17.021781 #32145] FATAL -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de]   
+F, [2019-11-11T09:44:17.021885 #32145] FATAL -- : [b6fe8f04-d515-4a09-888e-fdf8e7ff43de] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2946101814027294820_70365470054040'
+I, [2019-11-11T09:44:17.021649 #32145]  INFO -- : [be76d50c-4623-497e-a67a-b4c1f5753b43] Started GET "/" for 127.0.0.1 at 2019-11-11 09:44:17 -0800
+I, [2019-11-11T09:44:17.023322 #32145]  INFO -- : [be76d50c-4623-497e-a67a-b4c1f5753b43] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:44:17.024426 #32145]  INFO -- : [be76d50c-4623-497e-a67a-b4c1f5753b43]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:44:17.025763 #32145]  INFO -- : [be76d50c-4623-497e-a67a-b4c1f5753b43]   Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+I, [2019-11-11T09:44:17.030652 #32145]  INFO -- : [be76d50c-4623-497e-a67a-b4c1f5753b43] Completed 500 Internal Server Error in 7ms
+F, [2019-11-11T09:44:17.032188 #32145] FATAL -- : [be76d50c-4623-497e-a67a-b4c1f5753b43]   
+F, [2019-11-11T09:44:17.032327 #32145] FATAL -- : [be76d50c-4623-497e-a67a-b4c1f5753b43] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:44:17.032915 #32145] FATAL -- : [be76d50c-4623-497e-a67a-b4c1f5753b43]     4:     <title>BenchBnb</title>
+[be76d50c-4623-497e-a67a-b4c1f5753b43]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[be76d50c-4623-497e-a67a-b4c1f5753b43]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[be76d50c-4623-497e-a67a-b4c1f5753b43]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[be76d50c-4623-497e-a67a-b4c1f5753b43]     8:     <%= csrf_meta_tags %>
+[be76d50c-4623-497e-a67a-b4c1f5753b43]     9:     <%= javascript_include_tag 'application' %>
+[be76d50c-4623-497e-a67a-b4c1f5753b43]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:44:17.033079 #32145] FATAL -- : [be76d50c-4623-497e-a67a-b4c1f5753b43]   
+F, [2019-11-11T09:44:17.033540 #32145] FATAL -- : [be76d50c-4623-497e-a67a-b4c1f5753b43] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2946101814027294820_70365470054040'
+I, [2019-11-11T09:44:17.540576 #32145]  INFO -- : [b134a57c-8476-432d-ac53-e1bbe12edad3] Started GET "/favicon.ico" for 127.0.0.1 at 2019-11-11 09:44:17 -0800
+F, [2019-11-11T09:44:17.541984 #32145] FATAL -- : [b134a57c-8476-432d-ac53-e1bbe12edad3]   
+F, [2019-11-11T09:44:17.542250 #32145] FATAL -- : [b134a57c-8476-432d-ac53-e1bbe12edad3] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T09:44:17.542341 #32145] FATAL -- : [b134a57c-8476-432d-ac53-e1bbe12edad3]   
+F, [2019-11-11T09:44:17.542442 #32145] FATAL -- : [b134a57c-8476-432d-ac53-e1bbe12edad3] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[b134a57c-8476-432d-ac53-e1bbe12edad3] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T09:44:22.110393 #32145]  INFO -- : [1956af02-437b-4b53-8c94-fca763e15ac4] Started GET "/" for 127.0.0.1 at 2019-11-11 09:44:22 -0800
+I, [2019-11-11T09:44:22.112258 #32145]  INFO -- : [1956af02-437b-4b53-8c94-fca763e15ac4] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:44:22.113083 #32145]  INFO -- : [1956af02-437b-4b53-8c94-fca763e15ac4]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:44:22.114239 #32145]  INFO -- : [1956af02-437b-4b53-8c94-fca763e15ac4]   Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+I, [2019-11-11T09:44:22.121930 #32145]  INFO -- : [1956af02-437b-4b53-8c94-fca763e15ac4] Completed 500 Internal Server Error in 9ms
+F, [2019-11-11T09:44:22.122917 #32145] FATAL -- : [1956af02-437b-4b53-8c94-fca763e15ac4]   
+F, [2019-11-11T09:44:22.123004 #32145] FATAL -- : [1956af02-437b-4b53-8c94-fca763e15ac4] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2019-11-11T09:44:22.123166 #32145] FATAL -- : [1956af02-437b-4b53-8c94-fca763e15ac4]     4:     <title>BenchBnb</title>
+[1956af02-437b-4b53-8c94-fca763e15ac4]     5:     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+[1956af02-437b-4b53-8c94-fca763e15ac4]     6:     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPjYkDq0-iiCd6W5-qCw46J-r0EW39L1U"%>
+[1956af02-437b-4b53-8c94-fca763e15ac4]     7:     <%= stylesheet_link_tag 'application', media: 'all'%>
+[1956af02-437b-4b53-8c94-fca763e15ac4]     8:     <%= csrf_meta_tags %>
+[1956af02-437b-4b53-8c94-fca763e15ac4]     9:     <%= javascript_include_tag 'application' %>
+[1956af02-437b-4b53-8c94-fca763e15ac4]    10:     <%= favicon_link_tag 'favicon.png' %>
+F, [2019-11-11T09:44:22.123203 #32145] FATAL -- : [1956af02-437b-4b53-8c94-fca763e15ac4]   
+F, [2019-11-11T09:44:22.127507 #32145] FATAL -- : [1956af02-437b-4b53-8c94-fca763e15ac4] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2946101814027294820_70365470054040'
+I, [2019-11-11T09:44:22.323748 #32145]  INFO -- : [83ce488f-a199-49fb-a629-60535442b1d8] Started GET "/favicon.ico" for 127.0.0.1 at 2019-11-11 09:44:22 -0800
+F, [2019-11-11T09:44:22.324672 #32145] FATAL -- : [83ce488f-a199-49fb-a629-60535442b1d8]   
+F, [2019-11-11T09:44:22.324782 #32145] FATAL -- : [83ce488f-a199-49fb-a629-60535442b1d8] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2019-11-11T09:44:22.324832 #32145] FATAL -- : [83ce488f-a199-49fb-a629-60535442b1d8]   
+F, [2019-11-11T09:44:22.324891 #32145] FATAL -- : [83ce488f-a199-49fb-a629-60535442b1d8] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[83ce488f-a199-49fb-a629-60535442b1d8] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[83ce488f-a199-49fb-a629-60535442b1d8] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[83ce488f-a199-49fb-a629-60535442b1d8] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[83ce488f-a199-49fb-a629-60535442b1d8] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[83ce488f-a199-49fb-a629-60535442b1d8] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[83ce488f-a199-49fb-a629-60535442b1d8] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[83ce488f-a199-49fb-a629-60535442b1d8] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[83ce488f-a199-49fb-a629-60535442b1d8] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[83ce488f-a199-49fb-a629-60535442b1d8] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T09:51:20.680071 #32403]  INFO -- : [5768a810-2d61-431e-8fc4-446782ababc7] Started GET "/" for 127.0.0.1 at 2019-11-11 09:51:20 -0800
+I, [2019-11-11T09:51:20.698906 #32403]  INFO -- : [5768a810-2d61-431e-8fc4-446782ababc7] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:51:20.719620 #32403]  INFO -- : [5768a810-2d61-431e-8fc4-446782ababc7]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:51:20.736055 #32403]  INFO -- : [5768a810-2d61-431e-8fc4-446782ababc7]   Rendered static_pages/root.html.erb within layouts/application (16.2ms)
+I, [2019-11-11T09:51:20.739194 #32403]  INFO -- : [5768a810-2d61-431e-8fc4-446782ababc7] Completed 200 OK in 39ms (Views: 31.1ms)
+I, [2019-11-11T09:51:21.219965 #32403]  INFO -- : [b6694965-2da5-49aa-8cab-269dcb062039] Started GET "/assets/application-70580e1f960ba4d0787b6db3fe3b07b0534c91c4fe267d4d52c7d584cc10a1c0.js" for 127.0.0.1 at 2019-11-11 09:51:21 -0800
+F, [2019-11-11T09:51:21.221538 #32403] FATAL -- : [b6694965-2da5-49aa-8cab-269dcb062039]   
+F, [2019-11-11T09:51:21.221863 #32403] FATAL -- : [b6694965-2da5-49aa-8cab-269dcb062039] ActionController::RoutingError (No route matches [GET] "/assets/application-70580e1f960ba4d0787b6db3fe3b07b0534c91c4fe267d4d52c7d584cc10a1c0.js"):
+F, [2019-11-11T09:51:21.222055 #32403] FATAL -- : [b6694965-2da5-49aa-8cab-269dcb062039]   
+F, [2019-11-11T09:51:21.222154 #32403] FATAL -- : [b6694965-2da5-49aa-8cab-269dcb062039] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[b6694965-2da5-49aa-8cab-269dcb062039] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[b6694965-2da5-49aa-8cab-269dcb062039] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[b6694965-2da5-49aa-8cab-269dcb062039] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[b6694965-2da5-49aa-8cab-269dcb062039] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[b6694965-2da5-49aa-8cab-269dcb062039] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[b6694965-2da5-49aa-8cab-269dcb062039] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[b6694965-2da5-49aa-8cab-269dcb062039] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[b6694965-2da5-49aa-8cab-269dcb062039] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[b6694965-2da5-49aa-8cab-269dcb062039] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T09:51:22.066529 #32403]  INFO -- : [ddf22df9-aa92-4fcc-b467-5a0766374d5a] Started GET "/assets/application-70580e1f960ba4d0787b6db3fe3b07b0534c91c4fe267d4d52c7d584cc10a1c0.js" for 127.0.0.1 at 2019-11-11 09:51:22 -0800
+F, [2019-11-11T09:51:22.067673 #32403] FATAL -- : [ddf22df9-aa92-4fcc-b467-5a0766374d5a]   
+F, [2019-11-11T09:51:22.067855 #32403] FATAL -- : [ddf22df9-aa92-4fcc-b467-5a0766374d5a] ActionController::RoutingError (No route matches [GET] "/assets/application-70580e1f960ba4d0787b6db3fe3b07b0534c91c4fe267d4d52c7d584cc10a1c0.js"):
+F, [2019-11-11T09:51:22.067954 #32403] FATAL -- : [ddf22df9-aa92-4fcc-b467-5a0766374d5a]   
+F, [2019-11-11T09:51:22.068046 #32403] FATAL -- : [ddf22df9-aa92-4fcc-b467-5a0766374d5a] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[ddf22df9-aa92-4fcc-b467-5a0766374d5a] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2019-11-11T09:54:05.563771 #32530]  INFO -- : [7486006e-7480-4629-9bcc-691ffeb3840d] Started GET "/" for 127.0.0.1 at 2019-11-11 09:54:05 -0800
+I, [2019-11-11T09:54:05.592516 #32530]  INFO -- : [7486006e-7480-4629-9bcc-691ffeb3840d] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T09:54:05.619806 #32530]  INFO -- : [7486006e-7480-4629-9bcc-691ffeb3840d]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T09:54:05.635534 #32530]  INFO -- : [7486006e-7480-4629-9bcc-691ffeb3840d]   Rendered static_pages/root.html.erb within layouts/application (15.4ms)
+I, [2019-11-11T09:54:05.640990 #32530]  INFO -- : [7486006e-7480-4629-9bcc-691ffeb3840d] Completed 200 OK in 48ms (Views: 40.4ms)
+I, [2019-11-11T09:54:06.998665 #32530]  INFO -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26] Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593506562&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165838104&bounds%5BsouthWest%5D%5Blat%5D=37.740042501412645&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234161891&minSeating=1&maxSeating=10" for 127.0.0.1 at 2019-11-11 09:54:06 -0800
+I, [2019-11-11T09:54:07.000409 #32530]  INFO -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26] Processing by Api::BenchesController#index as JSON
+I, [2019-11-11T09:54:07.000571 #32530]  INFO -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26]   Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593506562", "lng"=>"-122.38838165838104"}, "southWest"=>{"lat"=>"37.740042501412645", "lng"=>"-122.47421234161891"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+I, [2019-11-11T09:54:07.021280 #32530]  INFO -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26] Completed 500 Internal Server Error in 21ms
+F, [2019-11-11T09:54:07.022610 #32530] FATAL -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26]   
+F, [2019-11-11T09:54:07.022935 #32530] FATAL -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26] PG::ConnectionBad (could not translate host name "db" to address: nodename nor servname provided, or not known
+):
+F, [2019-11-11T09:54:07.023042 #32530] FATAL -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26]   
+F, [2019-11-11T09:54:07.023274 #32530] FATAL -- : [513228d4-48bf-4f89-9bc0-e88c47e81f26] app/models/bench.rb:14:in `in_bounds'
+[513228d4-48bf-4f89-9bc0-e88c47e81f26] app/controllers/api/benches_controller.rb:5:in `index'
+I, [2019-11-11T18:07:54.907767 #1]  INFO -- : [f0b95430-f7ea-4f24-bf53-44d1347dd8d2] Started GET "/" for 192.168.176.1 at 2019-11-11 18:07:54 +0000
+I, [2019-11-11T18:07:54.966695 #1]  INFO -- : [f0b95430-f7ea-4f24-bf53-44d1347dd8d2] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T18:07:55.584027 #1]  INFO -- : [f0b95430-f7ea-4f24-bf53-44d1347dd8d2]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T18:07:55.595715 #1]  INFO -- : [f0b95430-f7ea-4f24-bf53-44d1347dd8d2]   Rendered static_pages/root.html.erb within layouts/application (10.6ms)
+I, [2019-11-11T18:07:55.601261 #1]  INFO -- : [f0b95430-f7ea-4f24-bf53-44d1347dd8d2] Completed 200 OK in 633ms (Views: 407.8ms)
+I, [2019-11-11T18:07:57.960463 #1]  INFO -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450] Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593506562&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165838104&bounds%5BsouthWest%5D%5Blat%5D=37.740042501412645&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234161891&minSeating=1&maxSeating=10" for 192.168.176.1 at 2019-11-11 18:07:57 +0000
+I, [2019-11-11T18:07:57.963933 #1]  INFO -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450] Processing by Api::BenchesController#index as JSON
+I, [2019-11-11T18:07:57.965016 #1]  INFO -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450]   Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593506562", "lng"=>"-122.38838165838104"}, "southWest"=>{"lat"=>"37.740042501412645", "lng"=>"-122.47421234161891"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+I, [2019-11-11T18:07:59.333384 #1]  INFO -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450] Completed 500 Internal Server Error in 1367ms (ActiveRecord: 706.5ms)
+F, [2019-11-11T18:07:59.336608 #1] FATAL -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450]   
+F, [2019-11-11T18:07:59.337671 #1] FATAL -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450] ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "benches" does not exist
+LINE 8:                WHERE a.attrelid = '"benches"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"benches"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2019-11-11T18:07:59.338325 #1] FATAL -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450]   
+F, [2019-11-11T18:07:59.338972 #1] FATAL -- : [9daabb4b-4bb1-4803-b0b9-e00fcbf73450] app/controllers/api/benches_controller.rb:8:in `index'
+I, [2019-11-11T18:08:10.098670 #1]  INFO -- : [95cb7412-07db-4282-bfcb-c5d9c1d7b4ac] Started GET "/" for 192.168.176.1 at 2019-11-11 18:08:10 +0000
+I, [2019-11-11T18:08:10.112684 #1]  INFO -- : [95cb7412-07db-4282-bfcb-c5d9c1d7b4ac] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T18:08:10.118677 #1]  INFO -- : [95cb7412-07db-4282-bfcb-c5d9c1d7b4ac]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T18:08:10.122540 #1]  INFO -- : [95cb7412-07db-4282-bfcb-c5d9c1d7b4ac]   Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+I, [2019-11-11T18:08:10.126928 #1]  INFO -- : [95cb7412-07db-4282-bfcb-c5d9c1d7b4ac] Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+I, [2019-11-11T18:08:10.985427 #1]  INFO -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75] Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593506562&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165838104&bounds%5BsouthWest%5D%5Blat%5D=37.740042501412645&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234161891&minSeating=1&maxSeating=10" for 192.168.176.1 at 2019-11-11 18:08:10 +0000
+I, [2019-11-11T18:08:10.988240 #1]  INFO -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75] Processing by Api::BenchesController#index as JSON
+I, [2019-11-11T18:08:10.989190 #1]  INFO -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75]   Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593506562", "lng"=>"-122.38838165838104"}, "southWest"=>{"lat"=>"37.740042501412645", "lng"=>"-122.47421234161891"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+I, [2019-11-11T18:08:10.997580 #1]  INFO -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75] Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.0ms)
+F, [2019-11-11T18:08:11.000516 #1] FATAL -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75]   
+F, [2019-11-11T18:08:11.001777 #1] FATAL -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75] ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "benches" does not exist
+LINE 8:                WHERE a.attrelid = '"benches"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"benches"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2019-11-11T18:08:11.005266 #1] FATAL -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75]   
+F, [2019-11-11T18:08:11.006298 #1] FATAL -- : [2ae0d200-18de-4c6e-b743-eb3561d29f75] app/controllers/api/benches_controller.rb:8:in `index'
+D, [2019-11-11T18:10:30.918326 #1] DEBUG -- :   [1m[35m (430.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+D, [2019-11-11T18:10:31.008315 #1] DEBUG -- :   [1m[35m (54.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-11-11T18:10:31.230224 #1] DEBUG -- :   [1m[35m (12.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-11-11T18:10:54.641835 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(737815420147457505)[0m
+D, [2019-11-11T18:10:54.867857 #1] DEBUG -- :   [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-11-11T18:10:54.886134 #1]  INFO -- : Migrating to CreateBenches (20170802005858)
+D, [2019-11-11T18:10:54.922469 #1] DEBUG -- :   [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:55.059767 #1] DEBUG -- :   [1m[35m (128.1ms)[0m  [1m[35mCREATE TABLE "benches" ("id" bigserial primary key, "description" character varying, "lat" float, "lng" float, "seating" integer DEFAULT 2 NOT NULL, "picture_url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-11-11T18:10:55.080010 #1] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (6.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170802005858"]]
+D, [2019-11-11T18:10:55.088001 #1] DEBUG -- :   [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-11-11T18:10:55.088639 #1]  INFO -- : Migrating to CreateFavorites (20170802010041)
+D, [2019-11-11T18:10:55.105955 #1] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:55.143640 #1] DEBUG -- :   [1m[35m (33.8ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" bigserial primary key, "user_id" integer NOT NULL, "bench_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-11-11T18:10:55.235325 #1] DEBUG -- :   [1m[35m (16.1ms)[0m  [1m[35mCREATE  INDEX  "index_favorites_on_user_id" ON "favorites"  ("user_id")[0m
+D, [2019-11-11T18:10:55.327090 #1] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mCREATE  INDEX  "index_favorites_on_bench_id" ON "favorites"  ("bench_id")[0m
+D, [2019-11-11T18:10:55.402550 #1] DEBUG -- :   [1m[35m (21.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_favorites_on_bench_id_and_user_id" ON "favorites"  ("bench_id", "user_id")[0m
+D, [2019-11-11T18:10:55.430057 #1] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170802010041"]]
+D, [2019-11-11T18:10:55.435428 #1] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-11-11T18:10:55.436598 #1]  INFO -- : Migrating to CreateReviews (20170802010223)
+D, [2019-11-11T18:10:55.477837 #1] DEBUG -- :   [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:55.575013 #1] DEBUG -- :   [1m[35m (82.3ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "body" character varying DEFAULT '' NOT NULL, "rating" integer NOT NULL, "bench_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-11-11T18:10:55.646934 #1] DEBUG -- :   [1m[35m (35.6ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_bench_id" ON "reviews"  ("bench_id")[0m
+D, [2019-11-11T18:10:55.659854 #1] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170802010223"]]
+D, [2019-11-11T18:10:55.664962 #1] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-11-11T18:10:55.666964 #1]  INFO -- : Migrating to CreateUsers (20170802010308)
+D, [2019-11-11T18:10:55.700989 #1] DEBUG -- :   [1m[35m (5.3ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:55.775952 #1] DEBUG -- :   [1m[35m (66.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2019-11-11T18:10:55.830821 #1] DEBUG -- :   [1m[35m (29.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+D, [2019-11-11T18:10:55.880132 #1] DEBUG -- :   [1m[35m (13.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+D, [2019-11-11T18:10:55.887835 #1] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170802010308"]]
+D, [2019-11-11T18:10:55.892951 #1] DEBUG -- :   [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-11-11T18:10:55.893820 #1]  INFO -- : Migrating to AddAuthorIdToReviews (20180411185240)
+D, [2019-11-11T18:10:55.909608 #1] DEBUG -- :   [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:55.924190 #1] DEBUG -- :   [1m[35m (11.8ms)[0m  [1m[35mALTER TABLE "reviews" ADD "author_id" integer NOT NULL[0m
+D, [2019-11-11T18:10:55.933872 #1] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180411185240"]]
+D, [2019-11-11T18:10:55.937618 #1] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-11-11T18:10:55.938809 #1]  INFO -- : Migrating to CreateActiveStorageTables (20181001184040)
+D, [2019-11-11T18:10:55.959362 #1] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:56.032793 #1] DEBUG -- :   [1m[35m (63.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+D, [2019-11-11T18:10:56.074373 #1] DEBUG -- :   [1m[35m (13.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+D, [2019-11-11T18:10:56.147132 #1] DEBUG -- :   [1m[35m (70.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+D, [2019-11-11T18:10:56.191518 #1] DEBUG -- :   [1m[35m (15.6ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+D, [2019-11-11T18:10:56.250335 #1] DEBUG -- :   [1m[35m (36.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+D, [2019-11-11T18:10:56.265832 #1] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (4.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181001184040"]]
+D, [2019-11-11T18:10:56.268850 #1] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:56.329271 #1] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (11.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-11-11T18:10:56.343168 #1] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:56.353216 #1] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Create (7.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "production"], ["created_at", "2019-11-11 18:10:56.344025"], ["updated_at", "2019-11-11 18:10:56.344025"]]
+D, [2019-11-11T18:10:56.359512 #1] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:56.362249 #1] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(737815420147457505)[0m
+D, [2019-11-11T18:10:56.394980 #1] DEBUG -- :   [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2019-11-11T18:10:56.541756 #1] DEBUG -- :   [1m[36mBench Destroy (11.9ms)[0m  [1m[31mDELETE FROM "benches"[0m
+D, [2019-11-11T18:10:56.588792 #1] DEBUG -- :   [1m[36mUser Destroy (14.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+D, [2019-11-11T18:10:56.646802 #1] DEBUG -- :   [1m[36mFavorite Load (16.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+D, [2019-11-11T18:10:56.721658 #1] DEBUG -- :   [1m[36mReview Load (13.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+D, [2019-11-11T18:10:56.801245 #1] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:56.811142 #1] DEBUG -- :   [1m[36mBench Create (7.1ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "seating", "picture_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "alamo square, many dogs"], ["lat", 37.775769], ["lng", -122.43496], ["seating", 4], ["picture_url", "https://c2.staticflickr.com/4/3035/2309664044_486f5a0327_z.jpg?zz=1"], ["created_at", "2019-11-11 18:10:56.802488"], ["updated_at", "2019-11-11 18:10:56.802488"]]
+D, [2019-11-11T18:10:56.813733 #1] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:56.815313 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:56.827625 #1] DEBUG -- :   [1m[36mBench Create (9.6ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "picture_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "UN plaza, food truck access"], ["lat", 37.77976], ["lng", -122.41382], ["picture_url", "http://www.concretedecor.net/CD/assets/Image/archives/CD1405/1405i_Page_32_Image_0001_600.jpg"], ["created_at", "2019-11-11 18:10:56.816177"], ["updated_at", "2019-11-11 18:10:56.816177"]]
+D, [2019-11-11T18:10:56.833717 #1] DEBUG -- :   [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:56.835847 #1] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:56.839518 #1] DEBUG -- :   [1m[36mBench Create (1.0ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "seating", "picture_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["description", "Ocean Beach, gnarly breh"], ["lat", 37.769996], ["lng", -122.511281], ["seating", 3], ["picture_url", "http://marmaladeandmileposts.com/wp-content/uploads/2012/05/2012-4-16-San-Francisco-Road-Trip-San-Francisco-1301.jpg"], ["created_at", "2019-11-11 18:10:56.837432"], ["updated_at", "2019-11-11 18:10:56.837432"]]
+D, [2019-11-11T18:10:56.844156 #1] DEBUG -- :   [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:56.965515 #1] DEBUG -- :   [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "IRQd_Igf9dOY4RoEWrgZlQ"], ["LIMIT", 1]]
+D, [2019-11-11T18:10:56.967428 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:56.973454 #1] DEBUG -- :   [1m[36mUser Exists (4.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "guest"], ["LIMIT", 1]]
+D, [2019-11-11T18:10:56.986790 #1] DEBUG -- :   [1m[36mUser Create (11.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "guest"], ["password_digest", "$2a$10$Lor1wmzxDp0NXS1bLo1HeuTSAjrX8GhUtwQQI7d/oiu9IzALZVvbi"], ["session_token", "IRQd_Igf9dOY4RoEWrgZlQ"], ["created_at", "2019-11-11 18:10:56.974562"], ["updated_at", "2019-11-11 18:10:56.974562"]]
+D, [2019-11-11T18:10:56.990093 #1] DEBUG -- :   [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:57.079147 #1] DEBUG -- :   [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_kevJIHX3gjbXd69BsnaZQ"], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.081170 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:57.091036 #1] DEBUG -- :   [1m[36mUser Exists (8.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "username"], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.095495 #1] DEBUG -- :   [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "username"], ["password_digest", "$2a$10$aOyQDlBR.2eZ8r0AkRE/1OJ6ZFg0itSbOXrGnM6IIE8WWZe76Zv6C"], ["session_token", "_kevJIHX3gjbXd69BsnaZQ"], ["created_at", "2019-11-11 18:10:57.093411"], ["updated_at", "2019-11-11 18:10:57.093411"]]
+D, [2019-11-11T18:10:57.098535 #1] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:57.117447 #1] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:57.125772 #1] DEBUG -- :   [1m[36mFavorite Exists (6.7ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."user_id" = $1 AND "favorites"."bench_id" = $2 LIMIT $3[0m  [["user_id", 1], ["bench_id", 1], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.190041 #1] DEBUG -- :   [1m[36mBench Load (2.3ms)[0m  [1m[34mSELECT  "benches".* FROM "benches" WHERE "benches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.226962 #1] DEBUG -- :   [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.240890 #1] DEBUG -- :   [1m[36mFavorite Create (11.7ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "bench_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["bench_id", 1], ["created_at", "2019-11-11 18:10:57.228427"], ["updated_at", "2019-11-11 18:10:57.228427"]]
+D, [2019-11-11T18:10:57.243729 #1] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:57.245439 #1] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:57.251431 #1] DEBUG -- :   [1m[36mFavorite Exists (4.2ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."user_id" = $1 AND "favorites"."bench_id" = $2 LIMIT $3[0m  [["user_id", 2], ["bench_id", 2], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.263372 #1] DEBUG -- :   [1m[36mBench Load (6.0ms)[0m  [1m[34mSELECT  "benches".* FROM "benches" WHERE "benches"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.277736 #1] DEBUG -- :   [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.282665 #1] DEBUG -- :   [1m[36mFavorite Create (1.2ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "bench_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["bench_id", 2], ["created_at", "2019-11-11 18:10:57.278982"], ["updated_at", "2019-11-11 18:10:57.278982"]]
+D, [2019-11-11T18:10:57.288605 #1] DEBUG -- :   [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:57.312119 #1] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:57.348369 #1] DEBUG -- :   [1m[36mBench Load (2.7ms)[0m  [1m[34mSELECT  "benches".* FROM "benches" WHERE "benches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.371284 #1] DEBUG -- :   [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.380622 #1] DEBUG -- :   [1m[36mReview Create (6.8ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "bench_id", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "very good sits"], ["rating", 5], ["bench_id", 1], ["created_at", "2019-11-11 18:10:57.372612"], ["updated_at", "2019-11-11 18:10:57.372612"], ["author_id", 1]]
+D, [2019-11-11T18:10:57.382841 #1] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-11-11T18:10:57.384814 #1] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+D, [2019-11-11T18:10:57.392214 #1] DEBUG -- :   [1m[36mBench Load (3.2ms)[0m  [1m[34mSELECT  "benches".* FROM "benches" WHERE "benches"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.397741 #1] DEBUG -- :   [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2019-11-11T18:10:57.400729 #1] DEBUG -- :   [1m[36mReview Create (1.0ms)[0m  [1m[32mINSERT INTO "reviews" ("body", "rating", "bench_id", "created_at", "updated_at", "author_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "its okay sit"], ["rating", 3], ["bench_id", 2], ["created_at", "2019-11-11 18:10:57.398850"], ["updated_at", "2019-11-11 18:10:57.398850"], ["author_id", 2]]
+D, [2019-11-11T18:10:57.404030 #1] DEBUG -- :   [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+I, [2019-11-11T18:11:04.106401 #1]  INFO -- : [a8a32a9d-753e-4394-8b46-a37cc86f7bbc] Started GET "/" for 192.168.176.1 at 2019-11-11 18:11:04 +0000
+I, [2019-11-11T18:11:04.112587 #1]  INFO -- : [a8a32a9d-753e-4394-8b46-a37cc86f7bbc] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T18:11:04.114506 #1]  INFO -- : [a8a32a9d-753e-4394-8b46-a37cc86f7bbc]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T18:11:04.116444 #1]  INFO -- : [a8a32a9d-753e-4394-8b46-a37cc86f7bbc]   Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+I, [2019-11-11T18:11:04.119111 #1]  INFO -- : [a8a32a9d-753e-4394-8b46-a37cc86f7bbc] Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+I, [2019-11-11T18:11:06.352211 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682] Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593506562&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165838104&bounds%5BsouthWest%5D%5Blat%5D=37.740042501412645&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234161891&minSeating=1&maxSeating=10" for 192.168.176.1 at 2019-11-11 18:11:06 +0000
+I, [2019-11-11T18:11:06.355453 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682] Processing by Api::BenchesController#index as JSON
+I, [2019-11-11T18:11:06.356685 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593506562", "lng"=>"-122.38838165838104"}, "southWest"=>{"lat"=>"37.740042501412645", "lng"=>"-122.47421234161891"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+I, [2019-11-11T18:11:06.825668 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   Rendering api/benches/index.json.jbuilder
+D, [2019-11-11T18:11:06.917844 #1] DEBUG -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   [1m[36mBench Load (88.0ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.80788593506562') AND (lat > '37.740042501412645') AND (lng > '-122.47421234161891') AND (lng < '-122.38838165838104') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+D, [2019-11-11T18:11:07.100266 #1] DEBUG -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   [1m[36mReview Load (35.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:11:07.463700 #1] DEBUG -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   [1m[36mFavorite Load (61.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:11:07.587003 #1] DEBUG -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   [1m[36mUser Load (29.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN ($1, $2)[0m  [["id", 1], ["id", 2]]
+D, [2019-11-11T18:11:07.786790 #1] DEBUG -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   [1m[35m (27.5ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 1]]
+I, [2019-11-11T18:11:07.789718 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   Rendered api/benches/_bench.json.jbuilder (41.0ms)
+D, [2019-11-11T18:11:07.804391 #1] DEBUG -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   [1m[35m (9.9ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 2]]
+I, [2019-11-11T18:11:07.808119 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   Rendered api/benches/_bench.json.jbuilder (15.5ms)
+I, [2019-11-11T18:11:08.010683 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682]   Rendered api/benches/index.json.jbuilder (1183.6ms)
+I, [2019-11-11T18:11:08.020876 #1]  INFO -- : [c558258c-a7e9-4da0-ad84-a00e5a546682] Completed 200 OK in 1663ms (Views: 968.9ms | ActiveRecord: 659.4ms)
+I, [2019-11-11T18:16:04.313062 #1]  INFO -- : [9974063b-b664-4c58-9d33-22561fd3853c] Started GET "/" for 192.168.176.1 at 2019-11-11 18:16:04 +0000
+I, [2019-11-11T18:16:04.318599 #1]  INFO -- : [9974063b-b664-4c58-9d33-22561fd3853c] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T18:16:04.320071 #1]  INFO -- : [9974063b-b664-4c58-9d33-22561fd3853c]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T18:16:04.321906 #1]  INFO -- : [9974063b-b664-4c58-9d33-22561fd3853c]   Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+I, [2019-11-11T18:16:04.323994 #1]  INFO -- : [9974063b-b664-4c58-9d33-22561fd3853c] Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+I, [2019-11-11T18:16:05.727860 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64] Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593506562&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165838104&bounds%5BsouthWest%5D%5Blat%5D=37.740042501412645&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234161891&minSeating=1&maxSeating=10" for 192.168.176.1 at 2019-11-11 18:16:05 +0000
+I, [2019-11-11T18:16:05.732168 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64] Processing by Api::BenchesController#index as JSON
+I, [2019-11-11T18:16:05.733291 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593506562", "lng"=>"-122.38838165838104"}, "southWest"=>{"lat"=>"37.740042501412645", "lng"=>"-122.47421234161891"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+I, [2019-11-11T18:16:05.738197 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   Rendering api/benches/index.json.jbuilder
+D, [2019-11-11T18:16:05.753848 #1] DEBUG -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   [1m[36mBench Load (6.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.80788593506562') AND (lat > '37.740042501412645') AND (lng > '-122.47421234161891') AND (lng < '-122.38838165838104') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+D, [2019-11-11T18:16:05.761017 #1] DEBUG -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   [1m[36mReview Load (4.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:16:05.768453 #1] DEBUG -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   [1m[36mFavorite Load (4.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:16:05.779784 #1] DEBUG -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN ($1, $2)[0m  [["id", 1], ["id", 2]]
+D, [2019-11-11T18:16:05.789289 #1] DEBUG -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   [1m[35m (4.4ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 1]]
+I, [2019-11-11T18:16:05.790993 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   Rendered api/benches/_bench.json.jbuilder (8.2ms)
+D, [2019-11-11T18:16:05.798850 #1] DEBUG -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   [1m[35m (4.2ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 2]]
+I, [2019-11-11T18:16:05.803756 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   Rendered api/benches/_bench.json.jbuilder (11.2ms)
+I, [2019-11-11T18:16:05.805266 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64]   Rendered api/benches/index.json.jbuilder (62.5ms)
+I, [2019-11-11T18:16:05.806746 #1]  INFO -- : [91731dd7-e580-4357-8348-99c0a0ff6a64] Completed 200 OK in 72ms (Views: 37.3ms | ActiveRecord: 31.5ms)
+I, [2019-11-11T18:31:52.124076 #1]  INFO -- : [27dcd3d8-465a-4598-9177-9ec1e49a1587] Started GET "/" for 192.168.192.1 at 2019-11-11 18:31:52 +0000
+I, [2019-11-11T18:31:52.154138 #1]  INFO -- : [27dcd3d8-465a-4598-9177-9ec1e49a1587] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T18:31:52.433711 #1]  INFO -- : [27dcd3d8-465a-4598-9177-9ec1e49a1587]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T18:31:52.446596 #1]  INFO -- : [27dcd3d8-465a-4598-9177-9ec1e49a1587]   Rendered static_pages/root.html.erb within layouts/application (11.0ms)
+I, [2019-11-11T18:31:52.450422 #1]  INFO -- : [27dcd3d8-465a-4598-9177-9ec1e49a1587] Completed 200 OK in 295ms (Views: 81.5ms)
+I, [2019-11-11T18:31:54.037877 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6] Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593506562&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165838104&bounds%5BsouthWest%5D%5Blat%5D=37.740042501412645&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234161891&minSeating=1&maxSeating=10" for 192.168.192.1 at 2019-11-11 18:31:54 +0000
+I, [2019-11-11T18:31:54.039845 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6] Processing by Api::BenchesController#index as JSON
+I, [2019-11-11T18:31:54.041638 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593506562", "lng"=>"-122.38838165838104"}, "southWest"=>{"lat"=>"37.740042501412645", "lng"=>"-122.47421234161891"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+I, [2019-11-11T18:31:55.198707 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   Rendering api/benches/index.json.jbuilder
+D, [2019-11-11T18:31:55.214110 #1] DEBUG -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   [1m[36mBench Load (13.3ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.80788593506562') AND (lat > '37.740042501412645') AND (lng > '-122.47421234161891') AND (lng < '-122.38838165838104') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+D, [2019-11-11T18:31:55.315732 #1] DEBUG -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   [1m[36mReview Load (23.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:31:55.395894 #1] DEBUG -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   [1m[36mFavorite Load (39.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:31:55.466368 #1] DEBUG -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   [1m[36mUser Load (24.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN ($1, $2)[0m  [["id", 1], ["id", 2]]
+D, [2019-11-11T18:31:55.514607 #1] DEBUG -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   [1m[35m (13.1ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 1]]
+I, [2019-11-11T18:31:55.515493 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   Rendered api/benches/_bench.json.jbuilder (17.9ms)
+D, [2019-11-11T18:31:55.519935 #1] DEBUG -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   [1m[35m (2.9ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 2]]
+I, [2019-11-11T18:31:55.520708 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   Rendered api/benches/_bench.json.jbuilder (4.5ms)
+I, [2019-11-11T18:31:55.544017 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6]   Rendered api/benches/index.json.jbuilder (344.5ms)
+I, [2019-11-11T18:31:55.545639 #1]  INFO -- : [90c23c3b-e59b-4797-be5a-48d1d87d86d6] Completed 200 OK in 1502ms (Views: 256.2ms | ActiveRecord: 760.5ms)
+I, [2019-11-11T18:31:56.638352 #1]  INFO -- : [9c383e67-0a5b-434b-bd56-cfcfca065300] Started GET "/" for 192.168.192.1 at 2019-11-11 18:31:56 +0000
+I, [2019-11-11T18:31:56.643662 #1]  INFO -- : [9c383e67-0a5b-434b-bd56-cfcfca065300] Processing by StaticPagesController#root as HTML
+I, [2019-11-11T18:31:56.645787 #1]  INFO -- : [9c383e67-0a5b-434b-bd56-cfcfca065300]   Rendering static_pages/root.html.erb within layouts/application
+I, [2019-11-11T18:31:56.647445 #1]  INFO -- : [9c383e67-0a5b-434b-bd56-cfcfca065300]   Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+I, [2019-11-11T18:31:56.649286 #1]  INFO -- : [9c383e67-0a5b-434b-bd56-cfcfca065300] Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+I, [2019-11-11T18:31:57.080548 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9] Started GET "/api/benches?bounds%5BnorthEast%5D%5Blat%5D=37.80788593506562&bounds%5BnorthEast%5D%5Blng%5D=-122.38838165838104&bounds%5BsouthWest%5D%5Blat%5D=37.740042501412645&bounds%5BsouthWest%5D%5Blng%5D=-122.47421234161891&minSeating=1&maxSeating=10" for 192.168.192.1 at 2019-11-11 18:31:57 +0000
+I, [2019-11-11T18:31:57.083835 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9] Processing by Api::BenchesController#index as JSON
+I, [2019-11-11T18:31:57.085601 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   Parameters: {"bounds"=>{"northEast"=>{"lat"=>"37.80788593506562", "lng"=>"-122.38838165838104"}, "southWest"=>{"lat"=>"37.740042501412645", "lng"=>"-122.47421234161891"}}, "minSeating"=>"1", "maxSeating"=>"10"}
+I, [2019-11-11T18:31:57.094022 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   Rendering api/benches/index.json.jbuilder
+D, [2019-11-11T18:31:57.102741 #1] DEBUG -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   [1m[36mBench Load (5.1ms)[0m  [1m[34mSELECT "benches".* FROM "benches" WHERE (lat < '37.80788593506562') AND (lat > '37.740042501412645') AND (lng > '-122.47421234161891') AND (lng < '-122.38838165838104') AND "benches"."seating" BETWEEN $1 AND $2[0m  [["seating", 1], ["seating", 10]]
+D, [2019-11-11T18:31:57.113251 #1] DEBUG -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   [1m[36mReview Load (5.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:31:57.129243 #1] DEBUG -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   [1m[36mFavorite Load (7.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."bench_id" IN ($1, $2)[0m  [["bench_id", 1], ["bench_id", 2]]
+D, [2019-11-11T18:31:57.143424 #1] DEBUG -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN ($1, $2)[0m  [["id", 1], ["id", 2]]
+D, [2019-11-11T18:31:57.156193 #1] DEBUG -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   [1m[35m (6.4ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 1]]
+I, [2019-11-11T18:31:57.158006 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   Rendered api/benches/_bench.json.jbuilder (11.2ms)
+D, [2019-11-11T18:31:57.168168 #1] DEBUG -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   [1m[35m (6.5ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."bench_id" = $1[0m  [["bench_id", 2]]
+I, [2019-11-11T18:31:57.170943 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   Rendered api/benches/_bench.json.jbuilder (11.4ms)
+I, [2019-11-11T18:31:57.173358 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9]   Rendered api/benches/index.json.jbuilder (77.4ms)
+I, [2019-11-11T18:31:57.175340 #1]  INFO -- : [6c86f7b5-3576-4278-8252-eae5961f6af9] Completed 200 OK in 89ms (Views: 39.8ms | ActiveRecord: 42.1ms)

@@ -19,6 +19,10 @@ appropriate action to the store on form submission as an `action` prop.
 */
 
 class EditPostForm extends React.Component {
+  componentDidMount() {
+    this.props.fetchPost(this.props.post.id)
+  }
+
   render() {
     // DO NOT MODIFY THIS FUNCTION
     const { action, formType, post } = this.props;
@@ -34,3 +38,15 @@ class EditPostForm extends React.Component {
     );
   }
 }
+
+const mapStateToProps = (state, ownProps) => ({
+  post: state.posts[ownProps.match.params.postId],
+  formType: 'Update Post'
+})
+
+const mapDispatchToProps = dispatch => ({
+  action: post => dispatch(updatePost(post)),  
+  fetchPost: post => dispatch(fetchPost(post))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(EditPostForm)

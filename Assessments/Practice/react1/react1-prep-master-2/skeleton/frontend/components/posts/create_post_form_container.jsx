@@ -10,3 +10,17 @@ along with a `formType` prop set to the string 'Create Post'. Additionally, map
 in a function that will dispatch the appropriate action to the store on form
 submission as an `action` prop.
 */
+
+const mapStateToProps = (state) => ({
+    post: {
+        title: "",
+        body: ""
+    },
+    formType: 'Create Post'
+})
+
+const mapDispatchToProps = dispatch => ({
+    action: post=> dispatch(createPost(post))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(PostForm)

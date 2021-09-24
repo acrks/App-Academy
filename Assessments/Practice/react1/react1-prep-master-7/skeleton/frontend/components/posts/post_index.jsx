@@ -8,3 +8,25 @@ Export a `PostIndex` presentational component that renders a list (`ul`) of
 via its container and fetch them once it has successfully mounted to the DOM.
 Below the `ul`, render the `CreatePostFormContainer` component.
 */
+
+class PostIndex extends React.Component {
+    componentDidMount() {
+        this.props.fetchPosts()
+    }
+
+    render() {
+        const { posts, deletePost } = this.props
+        return(
+            <div>
+                <ul>
+                    {posts.map(post => (
+                    <PostIndexItem key = {post.id} deletePost = {deletePost} post = {post} />
+                    ))}
+                </ul>
+                <CreatePostFormContainer />
+            </div>
+        )
+    }
+}
+
+export default PostIndex
